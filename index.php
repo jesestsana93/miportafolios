@@ -19,11 +19,11 @@
 				<p class="logo">JESUS ESTEBAN </p>
 				<nav><!--Contiene el menu de navegacion-->
 					<ul>
-						<li><a href="">Sobre mi</a></li>
-						<li><a href="">Mis trabajos</a></li>
-						<li><a href="">¿Por qué trabajar conmigo?</a></li>
-						<li><a href="">Blog</a></li>
-						<li><a href="">Contacto</a></li>
+						<li><a href="#sobre-mi">Sobre mi</a></li>
+						<li><a href="#mis-trabajos">Mis trabajos</a></li>
+						<li><a href="#por-que-trabajar">¿Por qué trabajar conmigo?</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#contacto">Contacto</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -270,7 +270,35 @@
 		    }
 		})
   	</script>
-
+	
+	<script>
+		$(document).ready(function(){//Cuando el documento esta listo palica la funcion que digo adentro
+			$(window).scroll(function(){//llamo a toda la pantalla cuando alguien hace scroll en toda la pagina
+			  	scroll = $(window).scrollTop();//en esta variable llamamos de vuelta a la ventana, almacenandolo en la funcion scrolltop que va de arriba hacia abajo
+			  	if (scroll > 100){//si es mayor a 100 cuando el usuario hizo scroll
+				    $('.menu').css({"position":"fixed"});//aplicando estilos con $;llamo a la clase menu en Jquery
+				    $('.menu').css({"width":"100%"});//ocupa el 100% de la pantalla
+				    $('.menu').css({"top":"0"});//estara arriba de la pantalla
+				    $('.menu').css({"background":"#fff"});//fondo blanco
+				    $('.menu a').css({"color":"#000"});//cambio color de letras del menu a negro
+				    $('.logo').css({"color":"#000"});//cambio el color del logo a negro
+				    $('.menu').css({"box-shadow":"rgba(0, 0, 0, 0.22) 6px 1px 1px"});//sombra línea
+				    $('.menu').css({"z-index":"100"});//maneja la visibilidad de los elementos
+				} else {
+					//cuando no hay scroll o cuando el scroll es para arriba
+				    $('.menu').css({"position":"relative"});//posicion por defecto para que no haya espacio 
+				    $('.menu').css({"background":"transparent"});//transparencia posicion por defecto
+				    $('.menu').css({"box-shadow":"0 0 0"});//sin sombra
+				    $('.menu a').css({"color":"#fff"});//blanco letras del menu
+				    $('.logo').css({"color":"#fff"});//blanco logo
+			  	}
+			})
+			$('.menu-icon').click(function(){
+			  	$('header nav').slideToggle();
+			})
+		})
+	</script>
+	
 </body>
 
 </html>

@@ -266,8 +266,26 @@ footer p{
     color: #fff;
     margin-top: 40px; /*lo separo un poco de las redes*/
 }
+
+/*WHATSAPP LOGO FIJO*/
 #whatsapp{
     position: fixed;
     top: 80%;
     right: 1%;
+}
+
+/*SCROLL MENU*/
+html{
+    scroll-behavior: smooth; /*comportamiento del scroll*/
+}
+#mis-trabajos, #sobre-mi, #por-que-trabajar, #blog, #contacto{
+    padding: 90px 0; /*para que no me corte el titulo*/
+}
+#servicios{
+    padding: 70px 0;
+}
+
+
+.menu-icon{
+    display: none;
 }
