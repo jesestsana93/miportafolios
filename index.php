@@ -17,6 +17,7 @@
 		<div class="menu"><!--Etiqueta para contener un elemento-->
 			<div class="contenedor">
 				<p class="logo">JESUS ESTEBAN </p>
+				<img class="menu-icon" src="imagenes/menu.png" alt="">
 				<nav><!--Contiene el menu de navegacion-->
 					<ul>
 						<li><a href="#sobre-mi">Sobre mi</a></li>
@@ -293,8 +294,8 @@
 				    $('.logo').css({"color":"#fff"});//blanco logo
 			  	}
 			})
-			$('.menu-icon').click(function(){
-			  	$('header nav').slideToggle();
+			$('.menu-icon').click(function(){/*animacion del menu responsive para dispositivos moviles*/
+			  	$('header nav').slideToggle();/*llamo a la etiqueta para que el elemento aparezca con un deslizamiento hacia abajo y también desaparece (combinación entre slideUp y slideDown*/
 			})
 		})
 	</script>
