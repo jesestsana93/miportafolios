@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" href="estilos/estilos.css">
 	<meta charset="UTF-8">
-	<title>JESUS SANCHEZ</title>	
+	<title>JESA</title>	
 	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="owl/owl.carousel.min.css">
 	<link rel="stylesheet" href="owl/owl.theme.default.min.css">
@@ -12,15 +12,16 @@
 
 <body>
 
-	<a id="whatsapp" href="https://api.whatsapp.com/send?phone=525522966244"><img src="imagenes/whatsapp.png" alt=""></a>
+	<a id="whatsapp" href="https://api.whatsapp.com/send?phone=525522966244" target="blank"><img src="imagenes/whatsapp.png" alt="whatsapp image"></a>
 	<header><!--Etiqueta de encabezado (cabecera): es buena estrategia de posicionamiento para Google-->
 		<div class="menu"><!--Etiqueta para contener un elemento-->
 			<div class="contenedor">
-				<p class="logo">JESUS ESTEBAN </p>
-				<img class="menu-icon" src="imagenes/menu.png" alt="">
+				<a href="#inicio"><p class="logo">JESA </p></a>
+				<img class="menu-icon" src="imagenes/menu.png" alt="menu movil">
 				<nav><!--Contiene el menu de navegacion-->
 					<ul>
 						<li><a href="#sobre-mi">Sobre mi</a></li>
+						<li><a href="#servicios">Servicios</a></li>
 						<li><a href="#mis-trabajos">Mis trabajos</a></li>
 						<li><a href="#por-que-trabajar">¿Por qué trabajar conmigo?</a></li>
 						<li><a href="#blog">Blog</a></li>
@@ -30,10 +31,10 @@
 			</div>
 		</div>
 		<div class="contenedor" id="contenedor-titulo-flex">
-			<div class="contenedor-titulo">
+			<div class="contenedor-titulo" id="inicio">
 				<h1>Jesús Esteban Sánchez Alcántara</h1> <!-- Toman los estilos del div de contenedor-titulo-->
 				<h2>Diseñador & Desarrollador web</h2>
-				<a href="">VER MIS TRABAJOS</a>
+				<a href="#mis-trabajos">VER MIS TRABAJOS</a>
 			</div>			
 		</div>
 	</header>
@@ -45,13 +46,13 @@
 				<h3>Sobre mi</h3>
 				<div class="contenedor-sobremi">
 					<div class="computadoras">
-						<img src="imagenes/computadoras.png" alt="">
+						<img src="imagenes/computadoras.png" alt="computadoras">
 					</div>
 					<div class="texto">
-						<p>Mi nombre es Jesus Sánchez y soy diseñador de páginas web. Tengo la experiencia en desarrollo de sitios web para pequeñas y medianas empresas, hasta tiendas en línea con carrito de compras.</p>
-        				<p>Me aseguro de utilizar siempre las últimas tecnologías de desarrollo web: HTML5, CSS3, jQuery, Wordpress. Si necesitas una página web moderna, funcional, que se adapte a todos los diferentes tipos de pantalla, te aseguro que llegaste al lugar correcto.</p>
+						<p>Mi nombre es Jesús Esteban Sánchez Alcántara y soy desarrollador de páginas web. Tengo la experiencia en desarrollo de sitios web para pequeñas y medianas empresas, hasta tiendas en línea con carrito de compras.</p>
+        				<p>Me aseguro de utilizar siempre las últimas tecnologías de desarrollo web: HTML5, CSS3, jQuery, Wordpress, Bootstrap 4. Si necesitas una página web moderna, funcional, que se adapte a todos los diferentes tipos de pantalla, te aseguro que llegaste con la persona indicada.</p>
         				<p>Puedes ponerte en contacto conmigo a través de Facebook, Linkedin o completando el formulario de contacto que se encuentra al final de mi sitio web.</p>
-        				<a href="">VER MIS TRABAJOS</a>
+        				<a href="#mis-trabajos">VER MIS TRABAJOS</a>
 					</div>
 				</div>
 			</div>
@@ -64,39 +65,39 @@
 				<div class="contenedor-servicios">
 					<div class="servicio violeta">
 						<h4>Diseño web</h4>
-						<p>Páginas web atractivas y funcionales con el objetivo de satisfacer todas tus expectativas. La importancia del diseño es fundamental para tener éxito y atraer a tus visitantes. También lo es la velocidad de carga del sitio web, deben ser rápidos para que el visitante tenga la mejor experiencia</p>
-				        <img class="icono" src="imagenes/monitor.png">
-				        <img class="ondas" src="imagenes/waves.png">
+						<p>Páginas web atractivas y funcionales con el objetivo de satisfacer todas tus expectativas. La importancia del diseño es fundamental para tener éxito y atraer a tus visitantes. También lo es la velocidad de carga del sitio web, deben ser rápidos para que el visitante tenga la mejor experiencia.</p>
+				        <img class="icono" src="imagenes/monitor.png" alt="monitor">
+				        <img class="ondas" src="imagenes/waves.png" alt="waves">
 					</div>				
 					<div class="servicio celeste">
 				        <h4>Responsive Design</h4>
-				        <p>Hoy en día las páginas web se ven en multitud de dispositivos como tablets, celulares, libros electrónicos, notebooks, PCs, etc. La tecnología móvil es el presente y el futuro. Para eso es importante y me aseguro de que tu sitio web sea compatible con todos los tamaños de pantalla de esta época moderna</p>
-				        <img class="icono" src="imagenes/mobile.png">
-				        <img class="ondas" src="imagenes/waves.png">
+				        <p>Hoy en día las páginas web se ven en multitud de dispositivos como tablets, celulares, libros electrónicos, notebooks, PCs, etc. La tecnología móvil es el presente y el futuro. Para eso es importante y me aseguro de que tu sitio web sea compatible con todos los tamaños de pantalla de esta época moderna.</p>
+				        <img class="icono" src="imagenes/mobile.png" alt="mobile">
+				        <img class="ondas" src="imagenes/waves.png" alt="waves">
 				    </div>
 				    <div class="servicio violeta">
 				        <h4>SEO</h4>
-				        <p>Al crear sitios web, tengo muy en cuenta la optimización de motores de búsqueda (SEO). Llevo a cabo prácticas de SEO estándar en cada página del sitio web, lo que permite que tu sitio tenga una clasificación más alta en los resultados de Google y asi generar mas tráfico a la web</p>
-				        <img class="icono" src="imagenes/seo.png">
-				        <img class="ondas" src="imagenes/waves.png">
+				        <p>Al crear sitios web, tengo muy en cuenta la optimización de motores de búsqueda (SEO). Llevo a cabo prácticas de SEO estándar en cada página del sitio web, lo que permite que tu sitio tenga una clasificación más alta en los resultados de Google y asi generar mas tráfico a la web.</p>
+				        <img class="icono" src="imagenes/seo.png" alt="seo">
+				        <img class="ondas" src="imagenes/waves.png" alt="waves">
 				    </div>
 				    <div class="servicio celeste">
 				        <h4>Autoadministrable</h4>
-				        <p>Es importante que puedas administrar tu página web vos mismo, desde cualquier lugar y en cualquier momento. Desarrollo sistemas de gestión de contenido que te permiten ver los datos de tu página web y editar el contenido que quieras, lo que te permite mantenerte actualizado</p>
-				        <img class="icono" src="imagenes/wordpress.png">
-				        <img class="ondas" src="imagenes/waves.png">
+				        <p>Es importante que puedas administrar tu página web tu mismo, desde cualquier lugar y en cualquier momento. Desarrollo sistemas de gestión de contenido que te permiten ver los datos de tu página web y editar el contenido que quieras, lo que te permite mantenerte actualizado.</p>
+				        <img class="icono" src="imagenes/wordpress.png" alt="wordpress">
+				        <img class="ondas" src="imagenes/waves.png" alt="waves">
 				    </div>
 				    <div class="servicio violeta">
 				        <h4>Mantenimiento</h4>
-				        <p>Podés contactarme si necesitas actualizar tu página web, agregar nuevas secciones o cualquier cambio que necesites. Esto es perfecto para los sitios web de pequeñas empresas, donde no se necesita un diseñador de páginas web a tiempo completo, sino solo en distintas ocasiones</p>
-				        <img class="icono" src="imagenes/mante.png">
-				        <img class="ondas" src="imagenes/waves.png">
+				        <p>Puedes contactarme si necesitas actualizar tu página web, agregar nuevas secciones o cualquier cambio que necesites. Esto es perfecto para los sitios web de pequeñas empresas, donde no se necesita un diseñador de páginas web a tiempo completo, sino solo en distintas ocasiones.</p>
+				        <img class="icono" src="imagenes/mante.png" alt="mantenimiento">
+				        <img class="ondas" src="imagenes/waves.png" alt="waves">
 				    </div>
 				    <div class="servicio celeste">
 				        <h4>Marketing Digital</h4>
-				        <p>Utilizo las herramientas mas importantes como Google Adwords y Google Analytics, para que tu negocio aparezca en los resultados de búsqueda de Google justo cuando alguien te necesita y analizar como los usuarios interactúan con tu página web</p>
-				        <img class="icono" src="imagenes/marketing.png">
-				        <img class="ondas" src="imagenes/waves.png">
+				        <p>Utilizo las herramientas mas importantes como Google Adwords y Google Analytics, para que tu negocio aparezca en los resultados de búsqueda de Google justo cuando alguien te necesita y analizar como los usuarios interactúan con tu página web.</p>
+				        <img class="icono" src="imagenes/marketing.png" alt="marketing">
+				        <img class="ondas" src="imagenes/waves.png" alt="waves">
 				    </div>
 				</div>
 			</div>
@@ -108,6 +109,18 @@
 				<h3>Mis trabajos</h3>
 				<div class="owl-carousel owl-theme">
 				    <div class="item">
+				      	<a href="https://www.c3.unam.mx/" target="blank"><img src="imagenes/c3-iMac.png" alt="c3-iMac"><p>Centro de Ciencias de la Complejidad (C3)</p></a>
+				    </div>
+				    <div class="item">
+				      	<a href="https://lncc.c3.unam.mx/" target="blank"><img src="imagenes/lncc-iMac.png" alt="lncc-iMac"><p>Laboratorio Nacional de Ciencias de la Complejidad</p></a>
+				    </div>
+				    <div class="item">
+				      	<a href="http://www.elevadoresdecarga.com.mx/#" target="blank"><img src="imagenes/elevadoresdecarga-iMac.png" alt="elevadoresdecarga-iMac"><p>Elevadores de carga</p></a>
+				    </div>
+				    <div class="item">
+				      	<a href="https://jesestsana93.github.io/SPECIES/" target="blank"><img src="imagenes/species-iMac.png" alt="species-iMac"><p>SPECIES</p></a>
+				    </div>
+				    <div class="item">
 				      	<a href="www.google.com"><img src="imagenes/sassy.jpg"><p>Sassy Kids</p></a>
 				    </div>
 				    <div class="item">
@@ -117,15 +130,7 @@
 				      	<a href="www.google.com"><img src="imagenes/alimentar.jpg"><p>Alimentar</p></a>
 				    </div>
 				    <div class="item">
-				      	<a href="www.google.com"><img src="imagenes/isip.jpg"><p>Isip</p></a></div>
-				    <div class="item">
-				      	<a href="www.google.com"><img src="imagenes/sassy.jpg"><p>Sassy Kids</p></a>
-				    </div>
-				    <div class="item">
-				      	<a href="www.google.com"><img src="imagenes/chaia.jpg"><p>Chaia</p></a>
-				    </div>
-				    <div class="item">
-				      	<a href="www.google.com"><img src="imagenes/alimentar.jpg"><p>Alimentar</p></a>
+				      	<a href="www.google.com"><img src="imagenes/isip.jpg"><p>isip</p></a>
 				    </div>
 				</div>
 			</div>			
@@ -138,23 +143,23 @@
 				<div class="contenedor-trabajar">
 			      	<div class="item">
 				        <ul><!--padre-->
-				          	<!--nt-child(1)--><li><img src="imagenes/velocidad.png" alt=""></li>
+				          	<!--nt-child(1)--><li><img src="imagenes/velocidad.png" alt="velocidad"></li>
 				          	<!--nt-child(2)--><li>Velocidad</li>
-				          	<!--nt-child(3)--><li>Me aseguro de que tu web cargue entre 2 y 4 segundos (depende de la cantidad de contenido del sitio). Si una web tarda más de 5 segundos en cargar, el 70% de los usuarios lo cierra y no vuelve a entrar más</li>
+				          	<!--nt-child(3)--><li>Me aseguro de que tu web cargue entre 2 y 4 segundos (depende de la cantidad de contenido del sitio). Si una web tarda más de 5 segundos en cargar, el 70% de los usuarios lo cierra y no vuelve a entrar más.</li>
 				        </ul>
 				    </div>
 				    <div class="item">
 				        <ul>
-				          	<li><img src="imagenes/mantenimiento.png" alt=""></li>
+				          	<li><img src="imagenes/mantenimiento.png" alt="mantenimiento"></li>
 				          	<li>Mantenimiento</li>
-				          	<li>Mantengo una comunicación constante con mi cliente, para enseñarle a modificar contenido mediante el panel de Wordpress o para cualquier duda/cambio que quiera hacer en su sitio web</li>
+				          	<li>Mantengo una comunicación constante con mi cliente, para enseñarle a modificar contenido mediante el panel de Wordpress o para cualquier duda/cambio que quiera hacer en su sitio web.</li>
 				        </ul>
 				    </div>
 				    <div class="item">
 				        <ul>
-				          	<li><img src="imagenes/mobile2.png" alt=""></li>
+				          	<li><img src="imagenes/mobile2.png" alt="mobile2"></li>
 				          	<li>Mobile Priority</li>
-				          	<li>Cada vez mas personas navegan desde sus celulares en cualquier parte del mundo. Me aseguro de que tu web esté optimizada para cualquier tipo de dispositivo móvil</li>
+				          	<li>Cada vez mas personas navegan desde sus celulares en cualquier parte del mundo. Me aseguro de que tu web esté optimizada para cualquier tipo de dispositivo móvil.</li>
 				        </ul>
 				    </div>
 				</div>
@@ -167,7 +172,7 @@
 				<h3>Blog</h3>
 			    <div class="contenedor-publicaciones">
 			      	<div class="publicacion">
-			        	<img src="imagenes/blog1.jpg" alt="imagen de ">
+			        	<img src="imagenes/blog1.jpg" alt="imagen de blog1">
 		        		<div class="contenido">
 		          			<h4>No alcanza con tener solamente una página web</h4>
 		          			<p>¿Querés aprender cuales son las herramientas que usan las mejores marcas para generar tráfico?</p>
@@ -230,10 +235,10 @@
 	<footer>
 		<div class="contenedor">
 		    <div class="redes">
-		      	<a href="#"><img src="imagenes/facebook.png" alt="imagen de facebook"></a>
+		      	<a href="https://www.facebook.com/chuyesteban93" target="blank"><img src="imagenes/facebook.png" alt="imagen de facebook"></a>
 		      	<a href="#"><img src="imagenes/medium.png" alt="imagen de facebook"></a>
-		      	<a href="#"><img src="imagenes/github.png" alt="imagen de facebook"></a>
-		      	<a href="#"><img src="imagenes/linkedin.png" alt="imagen de facebook"></a>
+		      	<a href="https://github.com/jesestsana93" target="blank"><img src="imagenes/github.png" alt="imagen de facebook"></a>
+		      	<a href="https://www.linkedin.com/in/jes%C3%BAs-esteban-s%C3%A1nchez-alc%C3%A1ntara-9009ba133/" target="blank"><img src="imagenes/linkedin.png" alt="imagen de facebook"></a>
 		    </div>
 		    <div class="parrafo">
 		      	<p>© 2020 Jesús Sánchez | Desarrollador Web México. Todos los derechos reservados</p>
