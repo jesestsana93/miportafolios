@@ -1,0 +1,286 @@
+@charset "UTF-8";
+/*------------------------------
+1. TIPOGRAFIA DEL SITIO
+--------------------------------*/
+/* line 10, estilos.scss */
+html {
+  font-size: 14px; }
+
+/*------------------------------
+2. ESTILOS GENERALES
+--------------------------------*/
+/* line 17, estilos.scss */
+.bg-primary {
+  background-color: #020510 !important; }
+
+/* line 21, estilos.scss */
+.btn {
+  border-color: #020510 !important;
+  border-radius: 0;
+  font-weight: bold; }
+
+/*Efecto de la caja desplazada en el boton*/
+/* line 28, estilos.scss */
+.btn-primary {
+  color: white;
+  background-color: #020510;
+  position: relative;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease; }
+  /* line 38, estilos.scss */
+  .btn-primary:active {
+    color: #020510 !important;
+    background-color: white !important;
+    border-color: transparent; }
+  /* line 44, estilos.scss */
+  .btn-primary:focus {
+    color: #020510;
+    background-color: white;
+    border-color: #020510;
+    -webkit-box-shadow: 0 0 0 0.2rem #020510 !important;
+            box-shadow: 0 0 0 0.2rem #020510 !important; }
+  /* line 51, estilos.scss */
+  .btn-primary:hover {
+    color: #020510;
+    background-color: white; }
+    /* line 55, estilos.scss */
+    .btn-primary:hover::before {
+      width: 130%;
+      left: -15%; }
+  /* line 61, estilos.scss */
+  .btn-primary:before {
+    content: '';
+    width: 0px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: -1;
+    -webkit-transform: skew(-45deg, 0);
+            transform: skew(-45deg, 0);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    content: '';
+    background-color: white; }
+
+/* line 77, estilos.scss */
+section,
+main {
+  margin-top: 3rem; }
+
+/* line 82, estilos.scss */
+.titulo {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: normal;
+  color: black;
+  margin-bottom: 2.5rem; }
+
+/*------------------------------
+3. INICIO
+--------------------------------*/
+/* line 93, estilos.scss */
+#inicio {
+  margin-top: 0;
+  /*Boton del menu */
+  /*Banner de la página*/
+  background-image: url(../images/fondo.jpg);
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+  /* line 96, estilos.scss */
+  #inicio button:focus {
+    outline: none; }
+  /* line 100, estilos.scss */
+  #inicio .navbar-dark .navbar-toggler {
+    border-color: transparent; }
+  /* line 104, estilos.scss */
+  #inicio .navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 1.5rem; }
+    /* line 108, estilos.scss */
+    #inicio .navbar-dark .navbar-nav .nav-link.active {
+      background-color: white;
+      color: #020510;
+      border-radius: 1rem; }
+  /* line 115, estilos.scss */
+  #inicio .boton-menu:before {
+    content: '\f142';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: white;
+    font-size: 3rem; }
+  /* line 123, estilos.scss */
+  #inicio .icono-cerrar:before {
+    content: '\f00d';
+    position: relative;
+    font-size: 3rem; }
+  /* line 141, estilos.scss */
+  #inicio:before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  /* line 151, estilos.scss */
+  #inicio .texto-encabezado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    z-index: 100; }
+
+/*------------------------------
+4. SERVICIOS
+--------------------------------*/
+/* line 164, estilos.scss */
+#servicios h3 {
+  font-size: 2rem;
+  text-align: center; }
+/* line 169, estilos.scss */
+#servicios .contenedor {
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 27rem;
+  color: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(#5055df), to(#6d68f3));
+  background: linear-gradient(to top, #5055df, #6d68f3);
+  -webkit-box-shadow: 0 12px 30px 0 rgba(80, 85, 223, 0.37);
+          box-shadow: 0 12px 30px 0 rgba(80, 85, 223, 0.37);
+  margin-bottom: .8rem; }
+/* line 179, estilos.scss */
+#servicios .ondas {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
+/* line 186, estilos.scss */
+#servicios .icono {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1rem; }
+
+/*------------------------------
+5. MIS TRABAJOS
+--------------------------------*/
+/* line 197, estilos.scss */
+#mis-trabajos a {
+  text-decoration: none; }
+  /* line 200, estilos.scss */
+  #mis-trabajos a p {
+    color: black;
+    text-align: center; }
+/* line 206, estilos.scss */
+#mis-trabajos .owl-prev,
+#mis-trabajos .owl-next {
+  font-size: 3rem; }
+/* line 211, estilos.scss */
+#mis-trabajos button:focus {
+  outline: none; }
+/* line 215, estilos.scss */
+#mis-trabajos .owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent;
+  color: red;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+/*------------------------------
+6. TRABAJAR-CONMIGO
+--------------------------------*/
+/* line 226, estilos.scss */
+#trabajar-conmigo h3 {
+  font-size: 1.3rem;
+  margin-top: .3rem; }
+/* line 231, estilos.scss */
+#trabajar-conmigo .fas,
+#trabajar-conmigo .fab {
+  font-size: 2rem;
+  color: #C52DFF; }
+
+/*------------------------------
+7. FOOTER
+--------------------------------*/
+/* line 241, estilos.scss */
+#pie {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  background-color: #2F2F2F;
+  color: white; }
+  /* line 247, estilos.scss */
+  #pie .redes {
+    font-size: 1.5rem;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    color: white; }
+    /* line 252, estilos.scss */
+    #pie .redes:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      color: #007AB9; }
+
+/* line 259, estilos.scss */
+#whatsapp {
+  position: fixed;
+  font-size: 3rem;
+  color: green;
+  right: 1rem;
+  bottom: 1rem; }
+
+/* =============================================
+X. Medias Queries
+============================================= */
+/* --------------Vista sm ------------- */
+@media (min-width: 576px) {
+  /* line 275, estilos.scss */
+  #servicios .contenedor {
+    height: 19rem; } }
+/* --------------Vista Md ------------- */
+@media (min-width: 768px) {
+  /* line 283, estilos.scss */
+  html {
+    font-size: 16px; }
+
+  /* line 288, estilos.scss */
+  #inicio .navbar-dark .navbar-nav .nav-link {
+    font-size: 1rem; }
+
+  /* line 294, estilos.scss */
+  #servicios .contenedor {
+    height: 17rem; } }
+/* --------------Vista lg ------------- */
+@media (min-width: 992px) {
+  /* line 303, estilos.scss */
+  #servicios .contenedor {
+    height: 30rem; } }
+/* --------------Vista Xl ------------- */
+@media (min-width: 1200px) {
+  /* line 311, estilos.scss */
+  html {
+    font-size: 18px; }
+
+  /* line 316, estilos.scss */
+  #servicios .contenedor {
+    height: 28rem; } }

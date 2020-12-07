@@ -1,310 +1,302 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<link rel="stylesheet" href="estilos/estilos.css">
+	<title>Portafolios JESA</title>
 	<meta charset="UTF-8">
-	<title>JESA</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<!--  CARGA DE ESTILOS CSS DE BOOTSTRAP 4.5.2-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--  CARGA DE FONT AWESOME -->
+	<link rel="stylesheet" href="css/all.min.css">
+	<!--  CARGA DE OWL CAROUSEL CSS-->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- CARGA DE FUENTES DE GOOGLE -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="owl/owl.carousel.min.css">
-	<link rel="stylesheet" href="owl/owl.theme.default.min.css">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<!-- CARGA DE ESTILOS CSS PERSONALIZADOS -->
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
+	<a id="whatsapp" href="https://api.whatsapp.com/send?phone=525522966244" target="blank"><i class="fab fa-whatsapp-square"></i></a>
+	<!--=====================================
+    =            Sección inicio            =
+	======================================-->
+	<section id="inicio">		
+		<header class="fixed-top">
+			<nav class="navbar navbar-dark bg-primary navbar-expand-md" id="menu-navegacion">
+				<div class="container">
+					<!--LOGOTIPO DEL SITIO-->
+					<a href="index.html" class="navbar-brand">
+						<h3>JESA</h3>
+					</a>
 
-	<a id="whatsapp" href="https://api.whatsapp.com/send?phone=525522966244" target="blank"><img src="imagenes/whatsapp.png" alt="whatsapp image"></a>
-	<header><!--Etiqueta de encabezado (cabecera): es buena estrategia de posicionamiento para Google-->
-		<div class="menu"><!--Etiqueta para contener un elemento-->
-			<div class="contenedor">
-				<a href="#inicio"><p class="logo">JESA </p></a>
-				<img class="menu-icon" src="imagenes/menu.png" alt="menu movil">
-				<nav><!--Contiene el menu de navegacion-->
-					<ul>
-						<li><a href="#sobre-mi">Sobre mi</a></li>
-						<li><a href="#servicios">Servicios</a></li>
-						<li><a href="#mis-trabajos">Mis trabajos</a></li>
-						<li><a href="#por-que-trabajar">¿Por qué trabajar conmigo?</a></li>
-						<li><a href="#blog">Blog</a></li>
-						<li><a href="#contacto">Contacto</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<div class="contenedor" id="contenedor-titulo-flex">
-			<div class="contenedor-titulo" id="inicio">
-				<h1>Jesús Esteban Sánchez Alcántara</h1> <!-- Toman los estilos del div de contenedor-titulo-->
-				<h2>Diseñador & Desarrollador web</h2>
-				<a href="#mis-trabajos">VER MIS TRABAJOS</a>
-			</div>			
-		</div>
-	</header>
+					<!-- Botón del menú responsive -->
+					<button type="button" class="navbar-toggler d-md-none" data-toggle="collapse"
+						data-target="#menu-principal" aria-controls="menu-principal arial-expanded=" false"
+						arial-label="Desplegar menu de navegacion"">
+						<span class=" boton-menu"></span>
+					</button>
 
-	<main><!--Etiqueta para indicarle a Google que en esta parte viene nuestro contenido principal-->
-		<!--SECCION SOBRE MI -->
-		<section id="sobre-mi">
-			<div class="contenedor">
-				<h3>Sobre mi</h3>
-				<div class="contenedor-sobremi">
-					<div class="computadoras">
-						<img src="imagenes/computadoras.png" alt="computadoras">
-					</div>
-					<div class="texto">
-						<p>Mi nombre es Jesús Esteban Sánchez Alcántara y soy desarrollador de páginas web. Tengo la experiencia en desarrollo de sitios web para pequeñas y medianas empresas, hasta tiendas en línea con carrito de compras.</p>
-        				<p>Me aseguro de utilizar siempre las últimas tecnologías de desarrollo web: HTML5, CSS3, jQuery, Wordpress, Bootstrap 4. Si necesitas una página web moderna, funcional, que se adapte a todos los diferentes tipos de pantalla, te aseguro que llegaste con la persona indicada.</p>
-        				<p>Puedes ponerte en contacto conmigo a través de Facebook, Linkedin o completando el formulario de contacto que se encuentra al final de mi sitio web.</p>
-        				<a href="#mis-trabajos">VER MIS TRABAJOS</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<!-- SECCION MIS SERVICIOS -->
-		<section id="servicios">
-			<div class="contenedor">
-				<h3>Servicios</h3>
-				<div class="contenedor-servicios">
-					<div class="servicio violeta">
-						<h4>Diseño web</h4>
-						<p>Páginas web atractivas y funcionales con el objetivo de satisfacer todas tus expectativas. La importancia del diseño es fundamental para tener éxito y atraer a tus visitantes. También lo es la velocidad de carga del sitio web, deben ser rápidos para que el visitante tenga la mejor experiencia.</p>
-				        <img class="icono" src="imagenes/monitor.png" alt="monitor">
-				        <img class="ondas" src="imagenes/waves.png" alt="waves">
-					</div>				
-					<div class="servicio celeste">
-				        <h4>Responsive Design</h4>
-				        <p>Hoy en día las páginas web se ven en multitud de dispositivos como tablets, celulares, libros electrónicos, notebooks, PCs, etc. La tecnología móvil es el presente y el futuro. Para eso es importante y me aseguro de que tu sitio web sea compatible con todos los tamaños de pantalla de esta época moderna.</p>
-				        <img class="icono" src="imagenes/mobile.png" alt="mobile">
-				        <img class="ondas" src="imagenes/waves.png" alt="waves">
-				    </div>
-				    <div class="servicio violeta">
-				        <h4>SEO</h4>
-				        <p>Al crear sitios web, tengo muy en cuenta la optimización de motores de búsqueda (SEO). Llevo a cabo prácticas de SEO estándar en cada página del sitio web, lo que permite que tu sitio tenga una clasificación más alta en los resultados de Google y asi generar mas tráfico a la web.</p>
-				        <img class="icono" src="imagenes/seo.png" alt="seo">
-				        <img class="ondas" src="imagenes/waves.png" alt="waves">
-				    </div>
-				    <div class="servicio celeste">
-				        <h4>Autoadministrable</h4>
-				        <p>Es importante que puedas administrar tu página web tu mismo, desde cualquier lugar y en cualquier momento. Desarrollo sistemas de gestión de contenido que te permiten ver los datos de tu página web y editar el contenido que quieras, lo que te permite mantenerte actualizado.</p>
-				        <img class="icono" src="imagenes/wordpress.png" alt="wordpress">
-				        <img class="ondas" src="imagenes/waves.png" alt="waves">
-				    </div>
-				    <div class="servicio violeta">
-				        <h4>Mantenimiento</h4>
-				        <p>Puedes contactarme si necesitas actualizar tu página web, agregar nuevas secciones o cualquier cambio que necesites. Esto es perfecto para los sitios web de pequeñas empresas, donde no se necesita un diseñador de páginas web a tiempo completo, sino solo en distintas ocasiones.</p>
-				        <img class="icono" src="imagenes/mante.png" alt="mantenimiento">
-				        <img class="ondas" src="imagenes/waves.png" alt="waves">
-				    </div>
-				    <div class="servicio celeste">
-				        <h4>Marketing Digital</h4>
-				        <p>Utilizo las herramientas mas importantes como Google Adwords y Google Analytics, para que tu negocio aparezca en los resultados de búsqueda de Google justo cuando alguien te necesita y analizar como los usuarios interactúan con tu página web.</p>
-				        <img class="icono" src="imagenes/marketing.png" alt="marketing">
-				        <img class="ondas" src="imagenes/waves.png" alt="waves">
-				    </div>
-				</div>
-			</div>
-		</section>
-
-		<!--SECCION MIS TRABAJOS -->
-		<section id="mis-trabajos">
-			<div class="contenedor">
-				<h3>Mis trabajos</h3>
-				<div class="owl-carousel owl-theme">
-				    <div class="item">
-				      	<a href="https://www.c3.unam.mx/" target="blank"><img src="imagenes/c3-iMac.png" alt="c3-iMac"><p>Centro de Ciencias de la Complejidad (C3)</p></a>
-				    </div>
-				    <div class="item">
-				      	<a href="https://lncc.c3.unam.mx/" target="blank"><img src="imagenes/lncc-iMac.png" alt="lncc-iMac"><p>Laboratorio Nacional de Ciencias de la Complejidad</p></a>
-				    </div>
-				    <div class="item">
-				      	<a href="http://www.elevadoresdecarga.com.mx/#" target="blank"><img src="imagenes/elevadoresdecarga-iMac.png" alt="elevadoresdecarga-iMac"><p>Elevadores de carga</p></a>
-				    </div>
-				    <div class="item">
-				      	<a href="https://jesestsana93.github.io/SPECIES/" target="blank"><img src="imagenes/species-iMac.png" alt="species-iMac"><p>SPECIES</p></a>
-				    </div>
-				    <div class="item">
-				      	<a href="www.google.com"><img src="imagenes/sassy.jpg"><p>Sassy Kids</p></a>
-				    </div>
-				    <div class="item">
-				      	<a href="www.google.com"><img src="imagenes/chaia.jpg"><p>Chaia</p></a>
-				    </div>
-				    <div class="item">
-				      	<a href="www.google.com"><img src="imagenes/alimentar.jpg"><p>Alimentar</p></a>
-				    </div>
-				    <div class="item">
-				      	<a href="www.google.com"><img src="imagenes/isip.jpg"><p>isip</p></a>
-				    </div>
-				</div>
-			</div>			
-		</section>
-		
-		<!--SECCION POR QUE TRABAJAR CONMIGO-->
-		<section id="por-que-trabajar">
-			<div class="contenedor">
-				<h3>¿Por qué trabajar conmigo?</h3>
-				<div class="contenedor-trabajar">
-			      	<div class="item">
-				        <ul><!--padre-->
-				          	<!--nt-child(1)--><li><img src="imagenes/velocidad.png" alt="velocidad"></li>
-				          	<!--nt-child(2)--><li>Velocidad</li>
-				          	<!--nt-child(3)--><li>Me aseguro de que tu web cargue entre 2 y 4 segundos (depende de la cantidad de contenido del sitio). Si una web tarda más de 5 segundos en cargar, el 70% de los usuarios lo cierra y no vuelve a entrar más.</li>
-				        </ul>
-				    </div>
-				    <div class="item">
-				        <ul>
-				          	<li><img src="imagenes/mantenimiento.png" alt="mantenimiento"></li>
-				          	<li>Mantenimiento</li>
-				          	<li>Mantengo una comunicación constante con mi cliente, para enseñarle a modificar contenido mediante el panel de Wordpress o para cualquier duda/cambio que quiera hacer en su sitio web.</li>
-				        </ul>
-				    </div>
-				    <div class="item">
-				        <ul>
-				          	<li><img src="imagenes/mobile2.png" alt="mobile2"></li>
-				          	<li>Mobile Priority</li>
-				          	<li>Cada vez mas personas navegan desde sus celulares en cualquier parte del mundo. Me aseguro de que tu web esté optimizada para cualquier tipo de dispositivo móvil.</li>
-				        </ul>
-				    </div>
-				</div>
-			</div>
-		</section>
-
-		<!--SECCION BLOG-->
-		<section id="blog">
+					<!--Barra de navegación -->
+					<div class="collapse navbar-collapse" id="menu-principal">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+							<li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mi</a></li>
+							<li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+							<li class="nav-item"><a href="#mis-trabajos" class="nav-link">Mis trabajos</a></li>
+							<li class="nav-item"><a href="#trabajar-conmigo" class="nav-link">¿Por qué trabajar conmigo?</a></li>
+							<li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+						</ul><!-- /.navbar-nav-->
+					</div><!-- /.collapse-->
+				</div><!-- /.container-->
+			</nav><!-- /.navbar-->
+		</header><!-- /.fixed-top-->
+		<div class="texto-encabezado">
 			<div class="container">
-				<h3>Blog</h3>
-			    <div class="contenedor-publicaciones">
-			      	<div class="publicacion">
-			        	<img src="imagenes/blog1.jpg" alt="imagen de blog1">
-		        		<div class="contenido">
-		          			<h4>No alcanza con tener solamente una página web</h4>
-		          			<p>¿Querés aprender cuales son las herramientas que usan las mejores marcas para generar tráfico?</p>
-		         			<a href="">Leer mas ➝</a>
-		        		</div>
-			      	</div>
-			      	<div class="publicacion">
-			        	<img src="imagenes/blog2.jpg" alt="blog2">
-			        	<div class="contenido">
-			          		<h4>¿Qué es el remarketing y como utilizarlo?</h4>
-			          		<p>El remarketing es una de las técnicas mas utlizadas por las mejores companías! ¿Querés saber de que se trata?</p>
-			          		<a href="">Leer mas ➝</a>
+				<div class="row">
+					<div class="col-12 px-3">
+						<p class="display-4">Jesús Esteban Sánchez Alcántara</p>
+						<em class="h4">D<span class="typed"></span></em> <br>
+						<button type="button" class="btn btn-primary">Ver mis trabajos</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- /#inicio-->
+
+	<!--=====================================
+    =            Sección sobre-mi            =
+	======================================-->
+	<section id="sobre-mi">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="titulo">Sobre mi</h2>
+				</div>
+				<div class="col-lg-6 text-center">
+					<img src="images/computadoras.png" alt="computadoras img-fluid">
+				</div>
+				<div class="col-lg-6">
+					<p>Mi nombre es Jesús Esteban Sánchez Alcántara y soy desarrollador web. Tengo experiencia en
+						desarrollo front-end de sitios web como algunos de la UNAM que se pueden visualizar más
+						adelante.</p>
+					<p>Me aseguro de utilizar siempre las últimas tecnologías de desarrollo web: HTML5, CSS3, jQuery,
+						Bootstrap 4. Si necesitas una página web moderna, funcional, que se adapte a todos los
+						diferentes tipos de pantalla, te aseguro que llegaste con la persona indicada.</p>
+					<p>Trato de mantenerme actualizado y en constante aprendizaje, aprendiendo nuevas tecnologías para
+						el desarrollo de back-end, y para abarcar el desarrollo de sitios e-commerce.</p>
+					<p>Puedes ponerte en contacto conmigo a través de Facebook, Instagram, Linkedin o envíame un
+						whatsapp y contestaré a la brevedad.</p>
+					<button type="button" class="btn btn-primary">Ver mis trabajos</button>
+				</div>
+			</div><!-- /.row-->
+		</div><!-- /.container-->
+	</section><!-- /#sobre-mi-->
+
+	<!--=====================================
+    =            Sección servicios           =
+	======================================-->
+	<main id="servicios">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="titulo">Servicios</h2>
+				</div>
+				<div class="col-lg-4">
+					<div class="contenedor">
+						<h3>Responsive Design</h3>
+						<p>Hoy en día las páginas web se ven en multitud de dispositivos como tablets, celulares, libros
+							electrónicos, notebooks, PCs, etc. La tecnología móvil es el presente y el futuro. Para eso
+							es importante y me aseguro de que el sitio web sea compatible con todos los tamaños de
+							pantalla
+							de esta época moderna.</p>
+						<img src="images/mobile.png" alt="mobile" class="img-fluid icono">
+						<img src="images/waves.png" alt="waves" class="img-fluid ondas">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="contenedor">
+						<h3>SEO</h3>
+						<p>Al crear sitios web, tengo muy en cuenta la optimización de motores de búsqueda (SEO). Llevo
+							a cabo prácticas de SEO estándar en cada página del sitio web, lo que permite que el sitio
+							tenga una clasificación más alta en los resultados de Google y asi generar mas tráfico a la
+							web.
+						</p>
+						<img src="images/seo.png" alt="mobile" class="img-fluid icono">
+						<img src="images/waves.png" alt="waves" class="img-fluid ondas">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="contenedor">
+						<h3>Mantenimiento</h3>
+						<p>Puedes contactarme si necesitas actualizar tu página web, agregar nuevas secciones o
+							cualquier cambio que necesites. Esto es perfecto para los sitios web de pequeñas empresas,
+							donde no se
+							necesita un diseñador de páginas web a tiempo completo, sino solo en distintas ocasiones.
+						</p>
+						<img src="images/mante.png" alt="mobile" class="img-fluid icono">
+						<img src="images/waves.png" alt="waves" class="img-fluid ondas">
+					</div>
+				</div><!-- /.col-->
+			</div><!-- /.row-->
+		</div><!-- /.container-->
+	</main><!-- /#servicios-->´
+
+	<!--=====================================
+    =            Sección mis-trabajos           =
+	======================================-->
+	<section id="mis-trabajos">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="titulo">Mis trabajos</h2>
+					<div class="owl-carousel owl-theme">
+						<div class="item">
+							<a href="https://www.c3.unam.mx/" target="blank">
+								<img src="images/c3-iMac.png" alt="c3 imac" class="img-fluid">
+								<p>Centro de Ciencias de la Complejidad (C3)</p>
+							</a>
+						</div>
+						<div class="item">
+							<a href="https://lncc.c3.unam.mx/" target="blank">
+								<img src="images/lncc-iMac.png" alt="lncc" class="img-fluid">
+								<p>Laboratorio Nacional de Ciencias de la Complejidad</p>
+							</a>
+						</div>
+						<div class="item">
+							<a href="http://www.elevadoresdecarga.com.mx/#" target="blank">
+								<img src="images/elevadoresdecarga-iMac.png" alt="elevadoresdecarga-iMac"
+									class="img-fluid">
+								<p>Elevadores de carga</p>
+							</a>
+						</div>
+						<div class="item">
+							<a href="https://suspicious-tereshkova-912fa5.netlify.app/" target="blank">
+								<img src="images/dance-room-iMac.png" alt="dance room" class="img-fluid">
+								<p>Dance room</p>
+							</a>
+						</div>
+						<div class="item">
+							<a href="" target="blank">
+								<img src="images/species-iMac.png" alt="species" class="img-fluid">
+								<p>SPECIES</p>
+							</a>
 						</div>
 					</div>
+				</div><!-- /.col-->
+			</div><!-- /.row-->
+		</div><!-- /.container-->
+	</section><!-- /#mis-trabajos-->
+
+	<!--=====================================
+    =   Sección ¿por qué trabajar conmigo?   =
+	======================================-->
+	<section id="trabajar-conmigo">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="titulo">¿Por qué trabajar conmigo?</h2>
 				</div>
-			</div>		
-		</section>
-		
-		<!--SECCION QUE ESPERAS -->
-		<section id="que-esperas">
-			<div class="contenedor">
-			    <h3>¿Qué esperas para tener tu página web?</h3>
-			    <a href="">CHARLEMOS</a>
-			</div>
-		</section>
+				<div class="col-md-6 text-center">
+					<i class="fas fa-tachometer-alt"></i>
+					<h3>Velocidad</h3>
+					<p>Me aseguro de que la web cargue en el menor tiempo posible (depende de la cantidad de contenido
+						del sitio). Si una web tarda más de 5 segundos en cargar, el 70% de los usuarios lo cierra y no
+						vuelve a entrar más.</p>
+				</div>
+				<div class="col-md-6 text-center">
+					<i class="fas fa-tools"></i>
+					<h3>Mantenimiento</h3>
+					<p>Mantengo una comunicación constante con el cliente, por si llegara a modificar el contenido o
+						para cualquier duda/cambio que quiera hacer en su sitio web.</p>
+				</div>
+				<div class="col-md-6 text-center">
+					<i class="fas fa-mobile-alt"></i>
+					<h3>Mobile priority</h3>
+					<p>Cada vez mas personas navegan desde sus celulares en cualquier parte del mundo. Me aseguro de la
+						tu web esté optimizada para cualquier tipo de dispositivo móvil.</p>
+				</div>
+				<div class="col-md-6 text-center">
+					<i class="fab fa-wordpress-simple"></i>
+					<h3>Autoadministrable</h3>
+					<p>Es importante que puedas administrar tu página web tu mismo, desde cualquier lugar y en cualquier momento. Desarrollo sistemas de gestión de contenido que te permiten ver los datos de tu página web y editar el contenido que quieras, lo que te permite mantenerte actualizado.</p>
+				</div><!--/.col-->
+			</div><!--/.row-->
+		</div><!--/.container-->
+	</section><!--/#trabajar-conmigo-->
 
-		<!--SECCION DE CONTACTO-->
-		<section id="contacto">
-  			<?php
-      			if(@$_GET['i']=='ok') { // QUIERE DECIR QUE EL FORMULARIO SE ENVIO CORRECTAMENTE
-      			?>
-				    <!--h3>La consulta se envio correctamente. Nos contactaremos a la brevedad.</h3-->
-      			<?php
-      			} else{
-      				?>
-		  			<div class="contenedor">
-		    			<h3>Contacto</h3> <!--envio-formulario.php: archivo php que recibe los datos del formulario-->
-		    			<!--method="post": metodo por el cual se van a enviar los datos del formulario de una manera oculta"; si fuera get los datos se envian mediante la url y se veran los datos que puso el usuario en los campos que no es lo que queremos-->
-		    			<!--enctype="multipart/form-data": atributo que se usa cuando queremos seleccionar archivos adjuntos -->
-		    			<form action="envio-formulario.php" method="post" enctype="multipart/form-data">
-					      	<input type="text" placeholder="Nombre" name="nombre" required>
-					      	<input type="email" placeholder="Email" name="email" required>
-					      	<!--La diferencia que tiene el input type email con respecto al text es que si el usuario no escribió el símbolo de arroba (@) en el campo, va a marcar que esta mal escrito-->
-					      	<textarea placeholder="Mensaje" name="mensaje" required></textarea> <!--campo de texto-->
-					      	<input type="submit" value="ENVIAR MENSAJE">
-					    </form>
-		          	<?php 
-		        }
-		    ?>
+	<!--=====================================
+    =            Sección contacto            =
+	======================================-->
+	<section id="contacto">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="titulo">Contacto</h2>
+				</div>
+				<div class="col-12 col-md-6 text-center">
+					<i class="far fa-envelope h5 mr-1"></i>
+					<span>jesusestebansa93@outlook.com</span>
+				</div>
+				<div class="col-12 col-md-6 text-center">
+					<i class="fas fa-phone-alt h5 mr-1"></i>
+					<span>5522966244</span>
+				</div><!-- /.col-->
+			</div><!-- /.row-->
+		</div><!-- /.container-->
+	</section><!--/#contacto-->
 
-			    <div class="contacto-info">
-			      	<div class="mail"><img src="imagenes/mail-icon.png" alt="email">jesusestebansa93@outlook.com</div>
-			      	<div class="whatsapp"><img src="imagenes/whatsapp-icon.png" alt="imagen de whatsapp">5522966244</div>
-			    </div>
-			</div>
-		</section>
+	<!--=====================================
+    =            FOOTER                     =
+	======================================-->
+	<footer id="pie">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-8">
+					<ul class="list-unstyled d-flex justify-content-around">
+						<li>
+							<a href="https://www.facebook.com/chuyesteban93" target="blank"">
+								<i class="fab fa-facebook redes"></i>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="fab fa-twitter-square redes"></i>
+							</a>
+						</li>
+						<li>
+							<a href=" https://github.com/jesestsana93" target="blank"">
+								<i class="fab fa-github redes"></i>
+							</a>
+						</li>
+						<li>
+							<a href=" https://www.linkedin.com/in/jes%C3%BAs-esteban-s%C3%A1nchez-alc%C3%A1ntara-9009ba133/" target="blank">
+								<i class="fab fa-linkedin redes mr-5"></i>
+							</a>
+						</li>
+					</ul>			
+					<p>© 2020 Jesús Sánchez | Desarrollador Web México. Todos los derechos reservados</p>
+				</div><!--/.col-->
+			</div><!--/.row-->
+		</div><!--/.container-->
+	</footer><!--/#pie-->
 
-	</main>
-	
-	<footer>
-		<div class="contenedor">
-		    <div class="redes">
-		      	<a href="https://www.facebook.com/chuyesteban93" target="blank"><img src="imagenes/facebook.png" alt="imagen de facebook"></a>
-		      	<a href="#"><img src="imagenes/medium.png" alt="imagen de facebook"></a>
-		      	<a href="https://github.com/jesestsana93" target="blank"><img src="imagenes/github.png" alt="imagen de facebook"></a>
-		      	<a href="https://www.linkedin.com/in/jes%C3%BAs-esteban-s%C3%A1nchez-alc%C3%A1ntara-9009ba133/" target="blank"><img src="imagenes/linkedin.png" alt="imagen de facebook"></a>
-		    </div>
-		    <div class="parrafo">
-		      	<p>© 2020 Jesús Sánchez | Desarrollador Web México. Todos los derechos reservados</p>
-		    </div>
-		</div>	
-	</footer>
-
-	<!--https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html-->
-	<!--Instalo el CSS arriba y aquí el ss que se incluye para el carousel -->	
-	<script src="owlcarousel/owl.carousel.min.js"></script>
-	
-	<!--Integro Jquery -->
-	<script
-	  src="https://code.jquery.com/jquery-3.4.1.min.js"
-	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-	  crossorigin="anonymous"></script>
-	<script src="owl/owl.carousel.min.js"></script>
-
-  	<script> // https://owlcarousel2.github.io/OwlCarousel2/demos/basic.html
-  		$('.owl-carousel').owlCarousel({
-		    loop:true,
-		    margin:10,
-		    nav:true,
-		    dots: false,
-		    responsive:{
-		        0:{ //en celulares se muestra uno
-		            items:1
-		        },
-		        600:{ //en tablets se muestran tres elementos
-		            items:3
-		        },
-		        1000:{ //en computadoras se muestran cuatro elementos
-		            items:4
-		        }
-		    }
-		})
-  	</script>
-	
-	<script>
-		$(document).ready(function(){//Cuando el documento esta listo palica la funcion que digo adentro
-			$(window).scroll(function(){//llamo a toda la pantalla cuando alguien hace scroll en toda la pagina
-			  	scroll = $(window).scrollTop();//en esta variable llamamos de vuelta a la ventana, almacenandolo en la funcion scrolltop que va de arriba hacia abajo
-			  	if (scroll > 100){//si es mayor a 100 cuando el usuario hizo scroll
-				    $('.menu').css({"position":"fixed"});//aplicando estilos con $;llamo a la clase menu en Jquery
-				    $('.menu').css({"width":"100%"});//ocupa el 100% de la pantalla
-				    $('.menu').css({"top":"0"});//estara arriba de la pantalla
-				    $('.menu').css({"background":"#fff"});//fondo blanco
-				    $('.menu a').css({"color":"#000"});//cambio color de letras del menu a negro
-				    $('.logo').css({"color":"#000"});//cambio el color del logo a negro
-				    $('.menu').css({"box-shadow":"rgba(0, 0, 0, 0.22) 6px 1px 1px"});//sombra línea
-				    $('.menu').css({"z-index":"100"});//maneja la visibilidad de los elementos
-				} else {
-					//cuando no hay scroll o cuando el scroll es para arriba
-				    $('.menu').css({"position":"relative"});//posicion por defecto para que no haya espacio 
-				    $('.menu').css({"background":"transparent"});//transparencia posicion por defecto
-				    $('.menu').css({"box-shadow":"0 0 0"});//sin sombra
-				    $('.menu a').css({"color":"#fff"});//blanco letras del menu
-				    $('.logo').css({"color":"#fff"});//blanco logo
-			  	}
-			})
-			$('.menu-icon').click(function(){/*animacion del menu responsive para dispositivos moviles*/
-			  	$('header nav').slideToggle();/*llamo a la etiqueta para que el elemento aparezca con un deslizamiento hacia abajo y también desaparece (combinación entre slideUp y slideDown*/
-			})
-		})
-	</script>
-	
+	<!-- CARGAR DE JQUERY -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<!-- CARGA DE BOOTSTRAP JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- CARGA DE TYPED.MIN.JS PARA EL EFECTO DE SHUFFLE LETTERS -->
+	<script src="js/typed.min.js"></script>
+	<!-- CARGAR DE OWL CAROUSEL JS -->
+	<script src="js/owl.carousel.min.js"></script>
+	 <!-- Carga de "page-scroll-to-id" | Crean el efecto de scroll entre los enlaces-->
+	 <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+	<!-- Carga de scripts.js -->
+	<script src="js/scripts.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,320 @@
+//--------------------------------------
+// 			PATRON DE COLORES
+//--------------------------------------
+$principal: rgb(2, 5, 16);
+$blanco: rgb(255, 255, 255);
+
+/*------------------------------
+1. TIPOGRAFIA DEL SITIO
+--------------------------------*/
+html {
+    font-size: 14px;
+}
+
+/*------------------------------
+2. ESTILOS GENERALES
+--------------------------------*/
+.bg-primary {
+    background-color: $principal !important;
+}
+
+.btn {
+    border-color: $principal !important;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+/*Efecto de la caja desplazada en el boton*/
+.btn-primary {
+    color: $blanco;
+    background-color: $principal;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .4s ease;
+
+    &:active {
+        color: $principal !important;
+        background-color: $blanco !important;
+        border-color: transparent;
+    }
+
+    &:focus {
+        color: $principal;
+        background-color: $blanco;
+        border-color: $principal;
+        box-shadow: 0 0 0 0.2rem $principal !important;
+    }
+
+    &:hover {
+        color: $principal;
+        background-color: $blanco;
+
+        &::before {
+            width: 130%;
+            left: -15%;
+        }
+    }
+
+    &:before {
+        content: '';
+        width: 0px;
+        height: 100%;
+        background-color: $blanco;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        z-index: -1;
+        transform: skew(-45deg, 0);
+        transition: all .4s ease;
+        content: '';
+        background-color: $blanco;
+    }
+}
+
+section,
+main {
+    margin-top: 3rem;
+}
+
+.titulo {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 2.5rem;
+}
+
+/*------------------------------
+3. INICIO
+--------------------------------*/
+#inicio {
+    margin-top: 0;
+    /*Boton del menu */
+    button:focus {
+        outline: none;
+    }
+
+    .navbar-dark .navbar-toggler {
+        border-color: transparent;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: $blanco;
+        font-size: 1.5rem;
+
+        &.active {
+            background-color: $blanco;
+            color: $principal;
+            border-radius: 1rem;
+        }
+    }
+
+    .boton-menu:before {
+        content: '\f142';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        color: $blanco;
+        font-size: 3rem;
+    }
+
+    .icono-cerrar:before {
+        content: '\f00d';
+        position: relative;
+        font-size: 3rem;
+    }
+
+    /*Banner de la página*/
+    background-image: url(../images/fondo.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    &:before {
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, .5);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .texto-encabezado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $blanco;
+        z-index: 100;
+    }
+}
+
+/*------------------------------
+4. SERVICIOS
+--------------------------------*/
+#servicios {
+    h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .contenedor {
+        border-radius: 1rem;
+        padding: 2rem;
+        height: 27rem;
+        color: $blanco;
+        background: linear-gradient(to top, #5055df, #6d68f3);
+        box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);
+        margin-bottom: .8rem;
+    }
+
+    .ondas {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .icono {
+        position: absolute;
+        right: 1.5rem;
+        bottom: 1rem;
+    }
+}
+
+/*------------------------------
+5. MIS TRABAJOS
+--------------------------------*/
+#mis-trabajos {
+    a {
+        text-decoration: none;
+
+        p {
+            color: black;
+            text-align: center;
+        }
+    }
+
+    .owl-prev,
+    .owl-next {
+        font-size: 3rem;
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    .owl-theme .owl-nav [class*=owl-]:hover {
+        background: transparent;
+        color: red;
+        transition: all .5s ease;
+    }
+}
+
+/*------------------------------
+6. TRABAJAR-CONMIGO
+--------------------------------*/
+#trabajar-conmigo {
+    h3 {
+        font-size: 1.3rem;
+        margin-top: .3rem;
+    }
+
+    .fas,
+    .fab {
+        font-size: 2rem;
+        color: #C52DFF;
+    }
+}
+
+/*------------------------------
+7. FOOTER
+--------------------------------*/
+#pie {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    background-color: #2F2F2F;
+    color: $blanco;
+
+    .redes {
+        font-size: 1.5rem;
+        transition: all .5s ease;
+        color: $blanco;
+
+        &:hover {
+            transform: scale(1.2);
+            color: #007AB9;
+        }
+    }
+}
+
+#whatsapp {
+    position: fixed;    
+    font-size: 3rem;
+    color: green;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+
+
+/* =============================================
+X. Medias Queries
+============================================= */
+/* --------------Vista sm ------------- */
+@media (min-width: 576px) {
+    #servicios {
+        .contenedor {
+            height: 19rem;
+        }
+    }
+}
+
+/* --------------Vista Md ------------- */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    #inicio {
+        .navbar-dark .navbar-nav .nav-link {
+            font-size: 1rem;
+        }
+    }
+
+    #servicios {
+        .contenedor {
+            height: 17rem;
+        }
+    }
+}
+
+/* --------------Vista lg ------------- */
+@media (min-width: 992px) {
+    #servicios {
+        .contenedor {
+            height: 30rem;
+        }
+    }
+}
+
+/* --------------Vista Xl ------------- */
+@media (min-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+
+    #servicios {
+        .contenedor {
+            height: 28rem;
+        }
+    }
+}
