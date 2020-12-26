@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
     /*-----------------------------------------------------------
         1. FUNCIONES PARA EL MENU PRINCIPAL
     -------------------------------------------------------------*/
@@ -36,24 +36,24 @@ $(function(){
     -------------------------------------------*/
     $('.owl-carousel').owlCarousel({
         loop: true,
-        margin:0,
-        nav:true,
+        margin: 0,
+        nav: true,
         dots: false,
         autoplay: true,
-        autoplayTimeout:1500,
+        autoplayTimeout: 1500,
         navText: ['<i class="fa fa-arrow-circle-left" title="Anterior"></i>', '<i class="fa  fa-arrow-circle-right" title="Siguiente"></i>'],
-        responsive:{
-            0:{ //en celulares se muestra uno
-                items:1
+        responsive: {
+            0: { //en celulares se muestra uno
+                items: 1
             },
-            576:{ //en contexto sm se muestran dos elementos
-                items:2
+            576: { //en contexto sm se muestran dos elementos
+                items: 2
             },
-            992:{ //en contexto lg se muestran tres elementos
-                items:3
+            992: { //en contexto lg se muestran tres elementos
+                items: 3
             },
-            1200:{ //en contexto xl se muestran cuatro elementos
-                items:4
+            1200: { //en contexto xl se muestran cuatro elementos
+                items: 4
             }
         }
     })
@@ -64,5 +64,24 @@ $(function(){
     $('#menu-principal a').mPageScroll2id({
         offset: 100,
         highlightClass: 'active'
+    });
+
+    /*------------------------------------------------------------
+    5. INICIANDO WOW.js para las animaciones en la página
+    --------------------------------------------------------------*/
+    new WOW().init();
+
+    /*---------------------------------
+    6. CABECERA ANIMADA
+    ----------------------------------*/
+    $(window).scroll(function () {
+        var nav = $('.transparente');
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();//altura de la ventana
+        if (scroll >= windowHeight) {
+            nav.addClass("bg-primary");
+        } else {
+            nav.removeClass("bg-primary");
+        }
     });
 });

@@ -14,8 +14,13 @@ html {
 /*------------------------------
 2. ESTILOS GENERALES
 --------------------------------*/
+.transparente{
+    background-color: transparent !important;  
+    transition: all .6s ease;  
+}
+
 .bg-primary {
-    background-color: $principal !important;
+    background-color: $principal !important;  
 }
 
 .btn {
@@ -105,7 +110,8 @@ main {
         color: $blanco;
         font-size: 1.5rem;
 
-        &.active {
+        &.active,
+        &:hover {
             background-color: $blanco;
             color: $principal;
             border-radius: 1rem;
@@ -171,7 +177,7 @@ main {
         padding: 2rem;
         height: 27rem;
         color: $blanco;
-        background: linear-gradient(to top, #5055df, #6d68f3);
+        background: linear-gradient(to top,#0a2482, #2b2525);
         box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);
         margin-bottom: .8rem;
     }
@@ -214,7 +220,7 @@ main {
 
     .owl-theme .owl-nav [class*=owl-]:hover {
         background: transparent;
-        color: red;
+        color: $principal;
         transition: all .5s ease;
     }
 }
@@ -231,7 +237,7 @@ main {
     .fas,
     .fab {
         font-size: 2rem;
-        color: #C52DFF;
+        color: $principal;
     }
 }
 

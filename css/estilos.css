@@ -10,17 +10,23 @@ html {
 2. ESTILOS GENERALES
 --------------------------------*/
 /* line 17, estilos.scss */
+.transparente {
+  background-color: transparent !important;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease; }
+
+/* line 22, estilos.scss */
 .bg-primary {
   background-color: #020510 !important; }
 
-/* line 21, estilos.scss */
+/* line 26, estilos.scss */
 .btn {
   border-color: #020510 !important;
   border-radius: 0;
   font-weight: bold; }
 
 /*Efecto de la caja desplazada en el boton*/
-/* line 28, estilos.scss */
+/* line 33, estilos.scss */
 .btn-primary {
   color: white;
   background-color: #020510;
@@ -31,27 +37,27 @@ html {
   z-index: 1;
   -webkit-transition: all .4s ease;
   transition: all .4s ease; }
-  /* line 38, estilos.scss */
+  /* line 43, estilos.scss */
   .btn-primary:active {
     color: #020510 !important;
     background-color: white !important;
     border-color: transparent; }
-  /* line 44, estilos.scss */
+  /* line 49, estilos.scss */
   .btn-primary:focus {
     color: #020510;
     background-color: white;
     border-color: #020510;
     -webkit-box-shadow: 0 0 0 0.2rem #020510 !important;
             box-shadow: 0 0 0 0.2rem #020510 !important; }
-  /* line 51, estilos.scss */
+  /* line 56, estilos.scss */
   .btn-primary:hover {
     color: #020510;
     background-color: white; }
-    /* line 55, estilos.scss */
+    /* line 60, estilos.scss */
     .btn-primary:hover::before {
       width: 130%;
       left: -15%; }
-  /* line 61, estilos.scss */
+  /* line 66, estilos.scss */
   .btn-primary:before {
     content: '';
     width: 0px;
@@ -68,12 +74,12 @@ html {
     content: '';
     background-color: white; }
 
-/* line 77, estilos.scss */
+/* line 82, estilos.scss */
 section,
 main {
   margin-top: 3rem; }
 
-/* line 82, estilos.scss */
+/* line 87, estilos.scss */
 .titulo {
   font-size: 3.5rem;
   text-align: center;
@@ -84,7 +90,7 @@ main {
 /*------------------------------
 3. INICIO
 --------------------------------*/
-/* line 93, estilos.scss */
+/* line 98, estilos.scss */
 #inicio {
   margin-top: 0;
   /*Boton del menu */
@@ -103,34 +109,34 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center; }
-  /* line 96, estilos.scss */
+  /* line 101, estilos.scss */
   #inicio button:focus {
     outline: none; }
-  /* line 100, estilos.scss */
+  /* line 105, estilos.scss */
   #inicio .navbar-dark .navbar-toggler {
     border-color: transparent; }
-  /* line 104, estilos.scss */
+  /* line 109, estilos.scss */
   #inicio .navbar-dark .navbar-nav .nav-link {
     color: white;
     font-size: 1.5rem; }
-    /* line 108, estilos.scss */
-    #inicio .navbar-dark .navbar-nav .nav-link.active {
+    /* line 113, estilos.scss */
+    #inicio .navbar-dark .navbar-nav .nav-link.active, #inicio .navbar-dark .navbar-nav .nav-link:hover {
       background-color: white;
       color: #020510;
       border-radius: 1rem; }
-  /* line 115, estilos.scss */
+  /* line 121, estilos.scss */
   #inicio .boton-menu:before {
     content: '\f142';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     color: white;
     font-size: 3rem; }
-  /* line 123, estilos.scss */
+  /* line 129, estilos.scss */
   #inicio .icono-cerrar:before {
     content: '\f00d';
     position: relative;
     font-size: 3rem; }
-  /* line 141, estilos.scss */
+  /* line 147, estilos.scss */
   #inicio:before {
     content: '';
     position: absolute;
@@ -139,7 +145,7 @@ main {
     right: 0;
     bottom: 0;
     left: 0; }
-  /* line 151, estilos.scss */
+  /* line 157, estilos.scss */
   #inicio .texto-encabezado {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -156,28 +162,28 @@ main {
 /*------------------------------
 4. SERVICIOS
 --------------------------------*/
-/* line 164, estilos.scss */
+/* line 170, estilos.scss */
 #servicios h3 {
   font-size: 2rem;
   text-align: center; }
-/* line 169, estilos.scss */
+/* line 175, estilos.scss */
 #servicios .contenedor {
   border-radius: 1rem;
   padding: 2rem;
   height: 27rem;
   color: white;
-  background: -webkit-gradient(linear, left bottom, left top, from(#5055df), to(#6d68f3));
-  background: linear-gradient(to top, #5055df, #6d68f3);
+  background: -webkit-gradient(linear, left bottom, left top, from(#0a2482), to(#2b2525));
+  background: linear-gradient(to top, #0a2482, #2b2525);
   -webkit-box-shadow: 0 12px 30px 0 rgba(80, 85, 223, 0.37);
           box-shadow: 0 12px 30px 0 rgba(80, 85, 223, 0.37);
   margin-bottom: .8rem; }
-/* line 179, estilos.scss */
+/* line 185, estilos.scss */
 #servicios .ondas {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%; }
-/* line 186, estilos.scss */
+/* line 192, estilos.scss */
 #servicios .icono {
   position: absolute;
   right: 1.5rem;
@@ -186,62 +192,62 @@ main {
 /*------------------------------
 5. MIS TRABAJOS
 --------------------------------*/
-/* line 197, estilos.scss */
+/* line 203, estilos.scss */
 #mis-trabajos a {
   text-decoration: none; }
-  /* line 200, estilos.scss */
+  /* line 206, estilos.scss */
   #mis-trabajos a p {
     color: black;
     text-align: center; }
-/* line 206, estilos.scss */
+/* line 212, estilos.scss */
 #mis-trabajos .owl-prev,
 #mis-trabajos .owl-next {
   font-size: 3rem; }
-/* line 211, estilos.scss */
+/* line 217, estilos.scss */
 #mis-trabajos button:focus {
   outline: none; }
-/* line 215, estilos.scss */
+/* line 221, estilos.scss */
 #mis-trabajos .owl-theme .owl-nav [class*=owl-]:hover {
   background: transparent;
-  color: red;
+  color: #020510;
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
 /*------------------------------
 6. TRABAJAR-CONMIGO
 --------------------------------*/
-/* line 226, estilos.scss */
+/* line 232, estilos.scss */
 #trabajar-conmigo h3 {
   font-size: 1.3rem;
   margin-top: .3rem; }
-/* line 231, estilos.scss */
+/* line 237, estilos.scss */
 #trabajar-conmigo .fas,
 #trabajar-conmigo .fab {
   font-size: 2rem;
-  color: #C52DFF; }
+  color: #020510; }
 
 /*------------------------------
 7. FOOTER
 --------------------------------*/
-/* line 241, estilos.scss */
+/* line 247, estilos.scss */
 #pie {
   margin-top: 1rem;
   padding-top: 1rem;
   background-color: #2F2F2F;
   color: white; }
-  /* line 247, estilos.scss */
+  /* line 253, estilos.scss */
   #pie .redes {
     font-size: 1.5rem;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
     color: white; }
-    /* line 252, estilos.scss */
+    /* line 258, estilos.scss */
     #pie .redes:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
       color: #007AB9; }
 
-/* line 259, estilos.scss */
+/* line 265, estilos.scss */
 #whatsapp {
   position: fixed;
   font-size: 3rem;
@@ -254,33 +260,33 @@ X. Medias Queries
 ============================================= */
 /* --------------Vista sm ------------- */
 @media (min-width: 576px) {
-  /* line 275, estilos.scss */
+  /* line 281, estilos.scss */
   #servicios .contenedor {
     height: 19rem; } }
 /* --------------Vista Md ------------- */
 @media (min-width: 768px) {
-  /* line 283, estilos.scss */
+  /* line 289, estilos.scss */
   html {
     font-size: 16px; }
 
-  /* line 288, estilos.scss */
+  /* line 294, estilos.scss */
   #inicio .navbar-dark .navbar-nav .nav-link {
     font-size: 1rem; }
 
-  /* line 294, estilos.scss */
+  /* line 300, estilos.scss */
   #servicios .contenedor {
     height: 17rem; } }
 /* --------------Vista lg ------------- */
 @media (min-width: 992px) {
-  /* line 303, estilos.scss */
+  /* line 309, estilos.scss */
   #servicios .contenedor {
     height: 30rem; } }
 /* --------------Vista Xl ------------- */
 @media (min-width: 1200px) {
-  /* line 311, estilos.scss */
+  /* line 317, estilos.scss */
   html {
     font-size: 18px; }
 
-  /* line 316, estilos.scss */
+  /* line 322, estilos.scss */
   #servicios .contenedor {
     height: 28rem; } }
