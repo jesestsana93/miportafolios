@@ -118,6 +118,11 @@ main {
         }
     }
 
+    /*BOTON DE IDIOMAS*/
+    .idiomas span{
+        cursor: pointer;
+    }
+
     .boton-menu:before {
         content: '\f142';
         font-family: 'Font Awesome 5 Free';

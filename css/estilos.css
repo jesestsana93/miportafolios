@@ -94,6 +94,7 @@ main {
 #inicio {
   margin-top: 0;
   /*Boton del menu */
+  /*BOTON DE IDIOMAS*/
   /*Banner de la página*/
   background-image: url(../images/fondo.jpg);
   background-position: center right;
@@ -124,19 +125,22 @@ main {
       background-color: white;
       color: #020510;
       border-radius: 1rem; }
-  /* line 121, estilos.scss */
+  /* line 122, estilos.scss */
+  #inicio .idiomas span {
+    cursor: pointer; }
+  /* line 126, estilos.scss */
   #inicio .boton-menu:before {
     content: '\f142';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     color: white;
     font-size: 3rem; }
-  /* line 129, estilos.scss */
+  /* line 134, estilos.scss */
   #inicio .icono-cerrar:before {
     content: '\f00d';
     position: relative;
     font-size: 3rem; }
-  /* line 147, estilos.scss */
+  /* line 152, estilos.scss */
   #inicio:before {
     content: '';
     position: absolute;
@@ -145,7 +149,7 @@ main {
     right: 0;
     bottom: 0;
     left: 0; }
-  /* line 157, estilos.scss */
+  /* line 162, estilos.scss */
   #inicio .texto-encabezado {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -162,11 +166,11 @@ main {
 /*------------------------------
 4. SERVICIOS
 --------------------------------*/
-/* line 170, estilos.scss */
+/* line 175, estilos.scss */
 #servicios h3 {
   font-size: 2rem;
   text-align: center; }
-/* line 175, estilos.scss */
+/* line 180, estilos.scss */
 #servicios .contenedor {
   border-radius: 1rem;
   padding: 2rem;
@@ -177,13 +181,13 @@ main {
   -webkit-box-shadow: 0 12px 30px 0 rgba(80, 85, 223, 0.37);
           box-shadow: 0 12px 30px 0 rgba(80, 85, 223, 0.37);
   margin-bottom: .8rem; }
-/* line 185, estilos.scss */
+/* line 190, estilos.scss */
 #servicios .ondas {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%; }
-/* line 192, estilos.scss */
+/* line 197, estilos.scss */
 #servicios .icono {
   position: absolute;
   right: 1.5rem;
@@ -192,21 +196,21 @@ main {
 /*------------------------------
 5. MIS TRABAJOS
 --------------------------------*/
-/* line 203, estilos.scss */
+/* line 208, estilos.scss */
 #mis-trabajos a {
   text-decoration: none; }
-  /* line 206, estilos.scss */
+  /* line 211, estilos.scss */
   #mis-trabajos a p {
     color: black;
     text-align: center; }
-/* line 212, estilos.scss */
+/* line 217, estilos.scss */
 #mis-trabajos .owl-prev,
 #mis-trabajos .owl-next {
   font-size: 3rem; }
-/* line 217, estilos.scss */
+/* line 222, estilos.scss */
 #mis-trabajos button:focus {
   outline: none; }
-/* line 221, estilos.scss */
+/* line 226, estilos.scss */
 #mis-trabajos .owl-theme .owl-nav [class*=owl-]:hover {
   background: transparent;
   color: #020510;
@@ -216,11 +220,11 @@ main {
 /*------------------------------
 6. TRABAJAR-CONMIGO
 --------------------------------*/
-/* line 232, estilos.scss */
+/* line 237, estilos.scss */
 #trabajar-conmigo h3 {
   font-size: 1.3rem;
   margin-top: .3rem; }
-/* line 237, estilos.scss */
+/* line 242, estilos.scss */
 #trabajar-conmigo .fas,
 #trabajar-conmigo .fab {
   font-size: 2rem;
@@ -229,25 +233,25 @@ main {
 /*------------------------------
 7. FOOTER
 --------------------------------*/
-/* line 247, estilos.scss */
+/* line 252, estilos.scss */
 #pie {
   margin-top: 1rem;
   padding-top: 1rem;
   background-color: #2F2F2F;
   color: white; }
-  /* line 253, estilos.scss */
+  /* line 258, estilos.scss */
   #pie .redes {
     font-size: 1.5rem;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
     color: white; }
-    /* line 258, estilos.scss */
+    /* line 263, estilos.scss */
     #pie .redes:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
       color: #007AB9; }
 
-/* line 265, estilos.scss */
+/* line 270, estilos.scss */
 #whatsapp {
   position: fixed;
   font-size: 3rem;
@@ -260,33 +264,33 @@ X. Medias Queries
 ============================================= */
 /* --------------Vista sm ------------- */
 @media (min-width: 576px) {
-  /* line 281, estilos.scss */
+  /* line 286, estilos.scss */
   #servicios .contenedor {
     height: 19rem; } }
 /* --------------Vista Md ------------- */
 @media (min-width: 768px) {
-  /* line 289, estilos.scss */
+  /* line 294, estilos.scss */
   html {
     font-size: 16px; }
 
-  /* line 294, estilos.scss */
+  /* line 299, estilos.scss */
   #inicio .navbar-dark .navbar-nav .nav-link {
     font-size: 1rem; }
 
-  /* line 300, estilos.scss */
+  /* line 305, estilos.scss */
   #servicios .contenedor {
     height: 17rem; } }
 /* --------------Vista lg ------------- */
 @media (min-width: 992px) {
-  /* line 309, estilos.scss */
+  /* line 314, estilos.scss */
   #servicios .contenedor {
     height: 30rem; } }
 /* --------------Vista Xl ------------- */
 @media (min-width: 1200px) {
-  /* line 317, estilos.scss */
+  /* line 322, estilos.scss */
   html {
     font-size: 18px; }
 
-  /* line 322, estilos.scss */
+  /* line 327, estilos.scss */
   #servicios .contenedor {
     height: 28rem; } }
