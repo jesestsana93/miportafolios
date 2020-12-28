@@ -119,8 +119,8 @@ main {
     }
 
     /*BOTON DE IDIOMAS*/
-    .idiomas span{
-        cursor: pointer;
+    .idiomas a:hover{
+        text-decoration: none;
     }
 
     .boton-menu:before {

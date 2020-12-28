@@ -20,7 +20,7 @@ $(function () {
       2. Iniciando el script Typed.js para las letras de la sección de inicio
     ---------------------------------------------------------------------------*/
     var typed = new Typed('.typed', { //^2000:indica el tiempo del texto que lo antecede
-        strings: ["esarrollador web front end ^2000"],
+        strings: ["Desarrollador web ^2000", "Web developer ^2000"],
         smartBackspace: false, //para que vuelva a escribir todo incluyendo el mas
         loop: true, //para que se vuelva a repetir el efecto
         showCursor: true, //muestra el cursor
@@ -30,6 +30,7 @@ $(function () {
         startDelay: 800 //tiempo en el que se inicia la animacion
         /*shuffle: true //los elementos se muestran de manera aleatoria*/
     });
+
 
     /*-----------------------------------------
       3. Iniciando owl-carousel
@@ -85,35 +86,5 @@ $(function () {
         }
     });
 
-    /*---------------------------------
-    7. BOTONES IDIOMAS
-    ----------------------------------*/
-    $(".idiomaEn").click(function () {
-        $(this).removeClass("bg-white");
-        $(this).removeClass("text-dark");
-
-        $(this).addClass("bg-info");
-        $(this).addClass("text-white");
-
-        $(".idiomaEs").removeClass("bg-info");
-        $(".idiomaEs").removeClass("text-white");
-
-        $(".idiomaEs").addClass("bg-white");
-        $(".idiomaEs").addClass("text-dark");
-    });
-
-    $(".idiomaEs").click(function () {
-        $(this).removeClass("bg-white");
-        $(this).removeClass("text-dark");
-
-        $(this).addClass("bg-info");
-        $(this).addClass("text-white");
-
-        $(".idiomaEn").removeClass("bg-info");
-        $(".idiomaEn").removeClass("text-white");
-
-        $(".idiomaEn").addClass("bg-white");
-        $(".idiomaEn").addClass("text-dark");
-    });
-
+    
 });

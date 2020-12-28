@@ -126,8 +126,8 @@ main {
       color: #020510;
       border-radius: 1rem; }
   /* line 122, estilos.scss */
-  #inicio .idiomas span {
-    cursor: pointer; }
+  #inicio .idiomas a:hover {
+    text-decoration: none; }
   /* line 126, estilos.scss */
   #inicio .boton-menu:before {
     content: '\f142';
