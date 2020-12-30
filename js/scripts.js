@@ -78,8 +78,8 @@ $(function () {
     $(window).scroll(function () {
         var nav = $('.transparente');
         var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height(); //altura de la ventana
-        if (scroll >= windowHeight) {
+        //var windowHeight = $(window).height(); //altura de la ventana
+        if (scroll >= 80) {
             nav.addClass("bg-primary");
         } else {
             nav.removeClass("bg-primary");

@@ -115,7 +115,7 @@ main {
         &:hover {
             background-color: $blanco;
             color: $principal;
-            border-radius: 1rem;
+            border-radius: .5rem;
         }
     }
 
@@ -175,11 +175,21 @@ main {
     .perfil{
         width: 9rem;
         margin-bottom: 1rem;
+        border-radius: 1rem;
+    }
+
+    .cv{
+        background-color: #28a745;
+        margin-top: 0;
+ 
+        &:hover{
+            color: #17a2b8;
+        }
     }
 }
 
 /*------------------------------
-4. SERVICIOS
+5. SERVICIOS
 --------------------------------*/
 #servicios {
     h3 {
@@ -212,7 +222,7 @@ main {
 }
 
 /*------------------------------
-5. MIS TRABAJOS
+6. MIS TRABAJOS
 --------------------------------*/
 #mis-trabajos {
     a {
@@ -241,7 +251,7 @@ main {
 }
 
 /*------------------------------
-6. TRABAJAR-CONMIGO
+7. TRABAJAR-CONMIGO
 --------------------------------*/
 #trabajar-conmigo {
     h3 {
@@ -257,7 +267,7 @@ main {
 }
 
 /*------------------------------
-7. FOOTER
+8. FOOTER
 --------------------------------*/
 #pie {
     margin-top: 1rem;
@@ -280,15 +290,18 @@ main {
 #whatsapp {
     position: fixed;    
     font-size: 3rem;
-    color: green;
+    color:green;
     right: 1rem;
     bottom: 1rem;
+    &:hover{
+        color:rgb(14, 102, 14);
+    }
 }
 
 
 
 /* =============================================
-X. Medias Queries
+9. Medias Queries
 ============================================= */
 /* --------------Vista sm ------------- */
 @media (min-width: 576px) {
