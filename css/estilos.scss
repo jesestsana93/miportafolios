@@ -98,6 +98,11 @@ main {
 --------------------------------*/
 #inicio {
     margin-top: 0;
+
+    /*Estilos al logotipo*/
+    .logo{
+        width: 4rem;
+    }
     /*Boton del menu */
     button:focus {
         outline: none;
