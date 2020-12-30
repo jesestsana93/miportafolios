@@ -90,6 +90,7 @@ main {
     font-weight: normal;
     color: black;
     margin-bottom: 2.5rem;
+    display: block;
 }
 
 /*------------------------------
@@ -165,6 +166,15 @@ main {
         align-items: center;
         color: $blanco;
         z-index: 100;
+    }
+}
+/*------------------------------
+4. SOBRE-MI
+--------------------------------*/
+#sobre-mi{
+    .perfil{
+        width: 9rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -310,6 +320,14 @@ X. Medias Queries
 
 /* --------------Vista lg ------------- */
 @media (min-width: 992px) {
+    #sobre-mi{
+        .perfil{
+            width: 11rem;
+            margin-bottom: 0;
+        }
+    }
+
+    
     #servicios {
         .contenedor {
             height: 30rem;

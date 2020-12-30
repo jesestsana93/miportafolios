@@ -85,12 +85,13 @@ main {
   text-align: center;
   font-weight: normal;
   color: black;
-  margin-bottom: 2.5rem; }
+  margin-bottom: 2.5rem;
+  display: block; }
 
 /*------------------------------
 3. INICIO
 --------------------------------*/
-/* line 98, estilos.scss */
+/* line 99, estilos.scss */
 #inicio {
   margin-top: 0;
   /*Boton del menu */
@@ -110,37 +111,37 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center; }
-  /* line 101, estilos.scss */
+  /* line 102, estilos.scss */
   #inicio button:focus {
     outline: none; }
-  /* line 105, estilos.scss */
+  /* line 106, estilos.scss */
   #inicio .navbar-dark .navbar-toggler {
     border-color: transparent; }
-  /* line 109, estilos.scss */
+  /* line 110, estilos.scss */
   #inicio .navbar-dark .navbar-nav .nav-link {
     color: white;
     font-size: 1.5rem; }
-    /* line 113, estilos.scss */
+    /* line 114, estilos.scss */
     #inicio .navbar-dark .navbar-nav .nav-link.active, #inicio .navbar-dark .navbar-nav .nav-link:hover {
       background-color: white;
       color: #020510;
       border-radius: 1rem; }
-  /* line 122, estilos.scss */
+  /* line 123, estilos.scss */
   #inicio .idiomas a:hover {
     text-decoration: none; }
-  /* line 126, estilos.scss */
+  /* line 127, estilos.scss */
   #inicio .boton-menu:before {
     content: '\f142';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     color: white;
     font-size: 3rem; }
-  /* line 134, estilos.scss */
+  /* line 135, estilos.scss */
   #inicio .icono-cerrar:before {
     content: '\f00d';
     position: relative;
     font-size: 3rem; }
-  /* line 152, estilos.scss */
+  /* line 153, estilos.scss */
   #inicio:before {
     content: '';
     position: absolute;
@@ -149,7 +150,7 @@ main {
     right: 0;
     bottom: 0;
     left: 0; }
-  /* line 162, estilos.scss */
+  /* line 163, estilos.scss */
   #inicio .texto-encabezado {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -164,13 +165,21 @@ main {
     z-index: 100; }
 
 /*------------------------------
-4. SERVICIOS
+4. SOBRE-MI
 --------------------------------*/
 /* line 175, estilos.scss */
+#sobre-mi .perfil {
+  width: 9rem;
+  margin-bottom: 1rem; }
+
+/*------------------------------
+4. SERVICIOS
+--------------------------------*/
+/* line 185, estilos.scss */
 #servicios h3 {
   font-size: 2rem;
   text-align: center; }
-/* line 180, estilos.scss */
+/* line 190, estilos.scss */
 #servicios .contenedor {
   border-radius: 1rem;
   padding: 2rem;
@@ -181,13 +190,13 @@ main {
   -webkit-box-shadow: 0 12px 30px 0 rgba(80, 85, 223, 0.37);
           box-shadow: 0 12px 30px 0 rgba(80, 85, 223, 0.37);
   margin-bottom: .8rem; }
-/* line 190, estilos.scss */
+/* line 200, estilos.scss */
 #servicios .ondas {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%; }
-/* line 197, estilos.scss */
+/* line 207, estilos.scss */
 #servicios .icono {
   position: absolute;
   right: 1.5rem;
@@ -196,21 +205,21 @@ main {
 /*------------------------------
 5. MIS TRABAJOS
 --------------------------------*/
-/* line 208, estilos.scss */
+/* line 218, estilos.scss */
 #mis-trabajos a {
   text-decoration: none; }
-  /* line 211, estilos.scss */
+  /* line 221, estilos.scss */
   #mis-trabajos a p {
     color: black;
     text-align: center; }
-/* line 217, estilos.scss */
+/* line 227, estilos.scss */
 #mis-trabajos .owl-prev,
 #mis-trabajos .owl-next {
   font-size: 3rem; }
-/* line 222, estilos.scss */
+/* line 232, estilos.scss */
 #mis-trabajos button:focus {
   outline: none; }
-/* line 226, estilos.scss */
+/* line 236, estilos.scss */
 #mis-trabajos .owl-theme .owl-nav [class*=owl-]:hover {
   background: transparent;
   color: #020510;
@@ -220,11 +229,11 @@ main {
 /*------------------------------
 6. TRABAJAR-CONMIGO
 --------------------------------*/
-/* line 237, estilos.scss */
+/* line 247, estilos.scss */
 #trabajar-conmigo h3 {
   font-size: 1.3rem;
   margin-top: .3rem; }
-/* line 242, estilos.scss */
+/* line 252, estilos.scss */
 #trabajar-conmigo .fas,
 #trabajar-conmigo .fab {
   font-size: 2rem;
@@ -233,25 +242,25 @@ main {
 /*------------------------------
 7. FOOTER
 --------------------------------*/
-/* line 252, estilos.scss */
+/* line 262, estilos.scss */
 #pie {
   margin-top: 1rem;
   padding-top: 1rem;
   background-color: #2F2F2F;
   color: white; }
-  /* line 258, estilos.scss */
+  /* line 268, estilos.scss */
   #pie .redes {
     font-size: 1.5rem;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
     color: white; }
-    /* line 263, estilos.scss */
+    /* line 273, estilos.scss */
     #pie .redes:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
       color: #007AB9; }
 
-/* line 270, estilos.scss */
+/* line 280, estilos.scss */
 #whatsapp {
   position: fixed;
   font-size: 3rem;
@@ -264,33 +273,38 @@ X. Medias Queries
 ============================================= */
 /* --------------Vista sm ------------- */
 @media (min-width: 576px) {
-  /* line 286, estilos.scss */
+  /* line 296, estilos.scss */
   #servicios .contenedor {
     height: 19rem; } }
 /* --------------Vista Md ------------- */
 @media (min-width: 768px) {
-  /* line 294, estilos.scss */
+  /* line 304, estilos.scss */
   html {
     font-size: 16px; }
 
-  /* line 299, estilos.scss */
+  /* line 309, estilos.scss */
   #inicio .navbar-dark .navbar-nav .nav-link {
     font-size: 1rem; }
 
-  /* line 305, estilos.scss */
+  /* line 315, estilos.scss */
   #servicios .contenedor {
     height: 17rem; } }
 /* --------------Vista lg ------------- */
 @media (min-width: 992px) {
-  /* line 314, estilos.scss */
+  /* line 324, estilos.scss */
+  #sobre-mi .perfil {
+    width: 11rem;
+    margin-bottom: 0; }
+
+  /* line 332, estilos.scss */
   #servicios .contenedor {
     height: 30rem; } }
 /* --------------Vista Xl ------------- */
 @media (min-width: 1200px) {
-  /* line 322, estilos.scss */
+  /* line 340, estilos.scss */
   html {
     font-size: 18px; }
 
-  /* line 327, estilos.scss */
+  /* line 345, estilos.scss */
   #servicios .contenedor {
     height: 28rem; } }
