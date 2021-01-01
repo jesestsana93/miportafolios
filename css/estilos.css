@@ -115,37 +115,37 @@ main {
   /* line 103, estilos.scss */
   #inicio .logo {
     width: 4rem; }
-  /* line 107, estilos.scss */
+  /* line 108, estilos.scss */
   #inicio button:focus {
     outline: none; }
-  /* line 111, estilos.scss */
+  /* line 112, estilos.scss */
   #inicio .navbar-dark .navbar-toggler {
     border-color: transparent; }
-  /* line 115, estilos.scss */
+  /* line 116, estilos.scss */
   #inicio .navbar-dark .navbar-nav .nav-link {
     color: white;
     font-size: 1.5rem; }
-    /* line 119, estilos.scss */
+    /* line 120, estilos.scss */
     #inicio .navbar-dark .navbar-nav .nav-link.active, #inicio .navbar-dark .navbar-nav .nav-link:hover {
       background-color: white;
       color: #020510;
       border-radius: .5rem; }
-  /* line 128, estilos.scss */
+  /* line 129, estilos.scss */
   #inicio .idiomas a:hover {
     text-decoration: none; }
-  /* line 132, estilos.scss */
+  /* line 133, estilos.scss */
   #inicio .boton-menu:before {
     content: '\f142';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     color: white;
     font-size: 3rem; }
-  /* line 140, estilos.scss */
+  /* line 141, estilos.scss */
   #inicio .icono-cerrar:before {
     content: '\f00d';
     position: relative;
     font-size: 3rem; }
-  /* line 158, estilos.scss */
+  /* line 159, estilos.scss */
   #inicio:before {
     content: '';
     position: absolute;
@@ -154,7 +154,7 @@ main {
     right: 0;
     bottom: 0;
     left: 0; }
-  /* line 168, estilos.scss */
+  /* line 169, estilos.scss */
   #inicio .texto-encabezado {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -171,27 +171,101 @@ main {
 /*------------------------------
 4. SOBRE-MI
 --------------------------------*/
-/* line 180, estilos.scss */
+/* line 182, estilos.scss */
 #sobre-mi .perfil {
   width: 9rem;
   margin-bottom: 1rem;
   border-radius: 1rem; }
-/* line 186, estilos.scss */
+/* line 188, estilos.scss */
+#sobre-mi ul {
+  margin-left: 0; }
+/* line 192, estilos.scss */
+#sobre-mi li {
+  list-style: none;
+  /*&::before{
+      content: '\f00c';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      color: green;
+      margin-right: .4rem;
+  }*/ }
+/* line 203, estilos.scss */
+#sobre-mi ul li p {
+  margin-bottom: 0;
+  margin-top: .5rem;
+  text-align: center; }
+/* line 209, estilos.scss */
+#sobre-mi .fab {
+  font-size: 4rem;
+  margin: 0 2rem;
+  text-align: center; }
+/* line 217, estilos.scss */
+#sobre-mi .fa-html5 {
+  color: #f16529; }
+  /* line 220, estilos.scss */
+  #sobre-mi .fa-html5:hover {
+    color: #e44d26; }
+/* line 225, estilos.scss */
+#sobre-mi .fa-css3-alt {
+  color: #2965f1; }
+  /* line 228, estilos.scss */
+  #sobre-mi .fa-css3-alt:hover {
+    color: #264de4; }
+/* line 233, estilos.scss */
+#sobre-mi .fa-js-square {
+  color: #f0db4f; }
+  /* line 236, estilos.scss */
+  #sobre-mi .fa-js-square:hover {
+    color: #f7da18; }
+/* line 241, estilos.scss */
+#sobre-mi .fa-sass {
+  color: #cc6699; }
+  /* line 244, estilos.scss */
+  #sobre-mi .fa-sass:hover {
+    color: #c7367f; }
+/* line 249, estilos.scss */
+#sobre-mi .fa-bootstrap {
+  color: #563d7c; }
+  /* line 252, estilos.scss */
+  #sobre-mi .fa-bootstrap:hover {
+    color: #3d1775; }
+/* line 257, estilos.scss */
+#sobre-mi .fa-php {
+  color: #8993be; }
+  /* line 260, estilos.scss */
+  #sobre-mi .fa-php:hover {
+    color: #232531; }
+/* line 265, estilos.scss */
+#sobre-mi .fa-wordpress {
+  color: #00749c; }
+  /* line 268, estilos.scss */
+  #sobre-mi .fa-wordpress:hover {
+    color: #444140; }
+/* line 273, estilos.scss */
+#sobre-mi .fa-github {
+  color: #444140; }
+  /* line 276, estilos.scss */
+  #sobre-mi .fa-github:hover {
+    color: #211F1f; }
+/* line 281, estilos.scss */
 #sobre-mi .cv {
   background-color: #28a745;
   margin-top: 0; }
-  /* line 190, estilos.scss */
+  /* line 285, estilos.scss */
   #sobre-mi .cv:hover {
     color: #17a2b8; }
+  /* line 289, estilos.scss */
+  #sobre-mi .cv .fas .fa-file-download {
+    font-size: 1rem; }
 
 /*------------------------------
 5. SERVICIOS
 --------------------------------*/
-/* line 200, estilos.scss */
+/* line 299, estilos.scss */
 #servicios h3 {
   font-size: 2rem;
   text-align: center; }
-/* line 205, estilos.scss */
+/* line 304, estilos.scss */
 #servicios .contenedor {
   border-radius: 1rem;
   padding: 2rem;
@@ -202,13 +276,13 @@ main {
   -webkit-box-shadow: 0 12px 30px 0 rgba(80, 85, 223, 0.37);
           box-shadow: 0 12px 30px 0 rgba(80, 85, 223, 0.37);
   margin-bottom: .8rem; }
-/* line 215, estilos.scss */
+/* line 314, estilos.scss */
 #servicios .ondas {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%; }
-/* line 222, estilos.scss */
+/* line 321, estilos.scss */
 #servicios .icono {
   position: absolute;
   right: 1.5rem;
@@ -217,21 +291,21 @@ main {
 /*------------------------------
 6. MIS TRABAJOS
 --------------------------------*/
-/* line 233, estilos.scss */
+/* line 332, estilos.scss */
 #mis-trabajos a {
   text-decoration: none; }
-  /* line 236, estilos.scss */
+  /* line 335, estilos.scss */
   #mis-trabajos a p {
     color: black;
     text-align: center; }
-/* line 242, estilos.scss */
+/* line 341, estilos.scss */
 #mis-trabajos .owl-prev,
 #mis-trabajos .owl-next {
   font-size: 3rem; }
-/* line 247, estilos.scss */
+/* line 346, estilos.scss */
 #mis-trabajos button:focus {
   outline: none; }
-/* line 251, estilos.scss */
+/* line 350, estilos.scss */
 #mis-trabajos .owl-theme .owl-nav [class*=owl-]:hover {
   background: transparent;
   color: #020510;
@@ -241,11 +315,11 @@ main {
 /*------------------------------
 7. TRABAJAR-CONMIGO
 --------------------------------*/
-/* line 262, estilos.scss */
+/* line 361, estilos.scss */
 #trabajar-conmigo h3 {
   font-size: 1.3rem;
   margin-top: .3rem; }
-/* line 267, estilos.scss */
+/* line 366, estilos.scss */
 #trabajar-conmigo .fas,
 #trabajar-conmigo .fab {
   font-size: 2rem;
@@ -254,32 +328,32 @@ main {
 /*------------------------------
 8. FOOTER
 --------------------------------*/
-/* line 277, estilos.scss */
+/* line 376, estilos.scss */
 #pie {
   margin-top: 1rem;
   padding-top: 1rem;
   background-color: #2F2F2F;
   color: white; }
-  /* line 283, estilos.scss */
+  /* line 382, estilos.scss */
   #pie .redes {
     font-size: 1.5rem;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
     color: white; }
-    /* line 288, estilos.scss */
+    /* line 387, estilos.scss */
     #pie .redes:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
       color: #007AB9; }
 
-/* line 295, estilos.scss */
+/* line 394, estilos.scss */
 #whatsapp {
   position: fixed;
   font-size: 3rem;
   color: green;
   right: 1rem;
   bottom: 1rem; }
-  /* line 301, estilos.scss */
+  /* line 401, estilos.scss */
   #whatsapp:hover {
     color: #0e660e; }
 
@@ -288,38 +362,49 @@ main {
 ============================================= */
 /* --------------Vista sm ------------- */
 @media (min-width: 576px) {
-  /* line 314, estilos.scss */
+  /* line 412, estilos.scss */
   #servicios .contenedor {
     height: 19rem; } }
 /* --------------Vista Md ------------- */
 @media (min-width: 768px) {
-  /* line 322, estilos.scss */
+  /* line 420, estilos.scss */
   html {
     font-size: 16px; }
 
-  /* line 327, estilos.scss */
+  /* line 425, estilos.scss */
   #inicio .navbar-dark .navbar-nav .nav-link {
     font-size: 1rem; }
 
-  /* line 333, estilos.scss */
+  /* line 431, estilos.scss */
+  #sobre-mi .fab {
+    margin: 0 1rem; }
+
+  /* line 437, estilos.scss */
   #servicios .contenedor {
     height: 17rem; } }
 /* --------------Vista lg ------------- */
 @media (min-width: 992px) {
-  /* line 342, estilos.scss */
+  /* line 446, estilos.scss */
   #sobre-mi .perfil {
     width: 11rem;
     margin-bottom: 0; }
+  /* line 451, estilos.scss */
+  #sobre-mi .fab {
+    margin: 0; }
 
-  /* line 350, estilos.scss */
+  /* line 457, estilos.scss */
   #servicios .contenedor {
     height: 30rem; } }
 /* --------------Vista Xl ------------- */
 @media (min-width: 1200px) {
-  /* line 358, estilos.scss */
+  /* line 465, estilos.scss */
   html {
     font-size: 18px; }
 
-  /* line 363, estilos.scss */
+  /* line 470, estilos.scss */
+  #sobre-mi .fab {
+    margin: 0 .5rem; }
+
+  /* line 476, estilos.scss */
   #servicios .contenedor {
     height: 28rem; } }

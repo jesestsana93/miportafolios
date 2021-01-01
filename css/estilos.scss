@@ -14,13 +14,13 @@ html {
 /*------------------------------
 2. ESTILOS GENERALES
 --------------------------------*/
-.transparente{
-    background-color: transparent !important;  
-    transition: all .6s ease;  
+.transparente {
+    background-color: transparent !important;
+    transition: all .6s ease;
 }
 
 .bg-primary {
-    background-color: $principal !important;  
+    background-color: $principal !important;
 }
 
 .btn {
@@ -100,9 +100,10 @@ main {
     margin-top: 0;
 
     /*Estilos al logotipo*/
-    .logo{
+    .logo {
         width: 4rem;
     }
+
     /*Boton del menu */
     button:focus {
         outline: none;
@@ -125,7 +126,7 @@ main {
     }
 
     /*BOTON DE IDIOMAS*/
-    .idiomas a:hover{
+    .idiomas a:hover {
         text-decoration: none;
     }
 
@@ -173,22 +174,120 @@ main {
         z-index: 100;
     }
 }
+
 /*------------------------------
 4. SOBRE-MI
 --------------------------------*/
-#sobre-mi{
-    .perfil{
+#sobre-mi {
+    .perfil {
         width: 9rem;
         margin-bottom: 1rem;
         border-radius: 1rem;
     }
 
-    .cv{
+    ul {
+        margin-left: 0;
+    }
+
+    li {
+        list-style: none;
+        /*&::before{
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: green;
+            margin-right: .4rem;
+        }*/
+    }
+
+    ul li p {
+        margin-bottom: 0;
+        margin-top: .5rem;
+        text-align: center;
+    }
+
+    .fab,
+     {
+        font-size: 4rem;
+        margin: 0 2rem;
+        text-align: center;
+    }
+    
+
+    .fa-html5 {
+        color: #f16529;
+
+        &:hover {
+            color: #e44d26;
+        }
+    }
+
+    .fa-css3-alt {
+        color: #2965f1;
+
+        &:hover {
+            color: #264de4;
+        }
+    }
+
+    .fa-js-square {
+        color: #f0db4f;
+
+        &:hover {
+            color: #f7da18;
+        }
+    }
+
+    .fa-sass {
+        color: #cc6699;
+
+        &:hover {
+            color: #c7367f;
+        }
+    }
+
+    .fa-bootstrap {
+        color: #563d7c;
+
+        &:hover {
+            color: #3d1775;
+        }
+    }
+
+    .fa-php {
+        color: #8993be;
+
+        &:hover {
+            color: #232531;
+        }
+    }
+
+    .fa-wordpress {
+        color: #00749c;
+
+        &:hover {
+            color: #444140;
+        }
+    }
+
+    .fa-github {
+        color: #444140;
+
+        &:hover {
+            color: #211F1f;
+        }
+    }
+
+    .cv {
         background-color: #28a745;
         margin-top: 0;
- 
-        &:hover{
+
+        &:hover {
             color: #17a2b8;
+        }
+
+        .fas .fa-file-download{
+            font-size: 1rem;
         }
     }
 }
@@ -207,7 +306,7 @@ main {
         padding: 2rem;
         height: 27rem;
         color: $blanco;
-        background: linear-gradient(to top,#0a2482, #2b2525);
+        background: linear-gradient(to top, #0a2482, #2b2525);
         box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);
         margin-bottom: .8rem;
     }
@@ -293,17 +392,16 @@ main {
 }
 
 #whatsapp {
-    position: fixed;    
+    position: fixed;
     font-size: 3rem;
-    color:green;
+    color: green;
     right: 1rem;
     bottom: 1rem;
-    &:hover{
-        color:rgb(14, 102, 14);
+
+    &:hover {
+        color: rgb(14, 102, 14);
     }
 }
-
-
 
 /* =============================================
 9. Medias Queries
@@ -329,6 +427,12 @@ main {
         }
     }
 
+    #sobre-mi {
+        .fab {
+            margin: 0 1rem;
+        }
+    }
+
     #servicios {
         .contenedor {
             height: 17rem;
@@ -338,14 +442,17 @@ main {
 
 /* --------------Vista lg ------------- */
 @media (min-width: 992px) {
-    #sobre-mi{
-        .perfil{
+    #sobre-mi {
+        .perfil {
             width: 11rem;
             margin-bottom: 0;
         }
+
+        .fab {
+            margin:0;
+        }
     }
 
-    
     #servicios {
         .contenedor {
             height: 30rem;
@@ -357,6 +464,12 @@ main {
 @media (min-width: 1200px) {
     html {
         font-size: 18px;
+    }
+
+    #sobre-mi {
+        .fab {
+            margin: 0 .5rem;
+        }
     }
 
     #servicios {
