@@ -41,7 +41,7 @@ $(function () {
         nav: true,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 1500,
+        autoplayTimeout: 2500,
         navText: ['<i class="fa fa-arrow-circle-left" title="Anterior"></i>', '<i class="fa  fa-arrow-circle-right" title="Siguiente"></i>'],
         responsive: {
             0: { //en celulares se muestra uno
