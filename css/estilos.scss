@@ -17,6 +17,9 @@ html {
 .transparente {
     background-color: transparent !important;
     transition: all .6s ease;
+    &:hover{
+        background-color: $principal !important;
+    }
 }
 
 .bg-primary {

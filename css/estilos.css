@@ -14,6 +14,9 @@ html {
   background-color: transparent !important;
   -webkit-transition: all .6s ease;
   transition: all .6s ease; }
+  .transparente:hover{
+    background-color: #020510 !important;
+  }
 
 /* line 22, estilos.scss */
 .bg-primary {
